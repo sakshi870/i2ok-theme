@@ -1,0 +1,2289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Basic Meta Info -->
+    <title>O2YO B2B Portal</title>
+    <meta name="keywords" content="">
+    <meta name="author" content="Bhupesh Varshney" />
+    <meta name="description" content="">
+
+    <!-- OpenGraph Meta -->
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:url" content="" />
+
+    <!-- Meta For Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@bhupeshimself">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image" content="logo.png">
+    <meta name="twitter:site" content="@bhupeshimself">
+    <meta name="twitter:description" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+    <!-- Manifest For PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheets -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/themes/frontend/listing/_listing.min.css">
+
+    <!-- Dropdown -->
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns.css">
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns-skin-discrete.css">
+
+    <!-- Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- Begin: Top Link Menu -->
+    <div class="container-fluid top-link-menu">
+        <div class="container-white-d-flex">
+            <a href="#0" class="link-text">
+                Products
+            </a>
+            <a href="#0" class="link-text">
+                Services
+            </a>
+            <a href="#0" class="link-text">
+                Digital Products
+            </a>
+            <a href="#0" class="link-text">
+                Apps & Softwares
+            </a>
+            <a href="#0" class="link-text">
+                Classified Ads
+            </a>
+            <a href="#0" class="link-text">
+                Freelancers
+            </a>
+            <a href="#0" class="link-text">
+                Jobs
+            </a>
+            <a href="#0" class="link-text">
+                Art & Craft
+            </a>
+            <a href="#0" class="link-text">
+                Vehicle for Sale
+            </a>
+            <a href="#0" class="link-text">
+                Coworking
+            </a>
+            <a href="#0" class="link-text">
+                Business Opportunities
+            </a>
+            <a href="#0" class="link-text">
+                Tours & Travels
+            </a>
+        </div>
+    </div>
+    <!-- End: Top Link Menu -->
+    <!-- Begin: Top Main Menu -->
+    <div class="container-fluid top-main-blue-dark">
+        <div class="container-transparent-d-flex">
+            <a href="#0" class="logo m-t-2">
+                <img src="img/logo-white.svg" title="Home" />
+            </a>
+            <!-- Categories Dropdown -->
+            <a href="javascript:void(0);" onclick="OpenFirstMenu()" class="m-t-7" id="btn-toggle">
+                <img src="img/buttons/btn-toggle-white.png" title="categories" />
+            </a>
+            <!-- Categories Dropdown Close All Menu -->
+            <a href="javascript:void(0);" onclick="CloseAllMenu()" class="m-t-7" id="btn-toggle-close">
+                <img src="img/buttons/btn-toggle-white.png" title="categories" />
+            </a>
+            <!-- Search -->
+            <input type="text" class="search-input-wide" placeholder="Search here..." />
+            <span class="search-btn-white">
+                <a href="#0" class="link-icon m-r-5">
+                    <img src="img/buttons/btn-search.svg" title="Search" />
+                    <span class="m-l-3">Search</span>
+                </a>
+            </span>
+            <!-- Text Link -->
+            <a href="#0" class="button-blue-default m-lr-7 m-t-6">
+                REGISTER
+            </a>
+            <!-- Country -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <img src="img/flags/circle/in.png" title="Country" />
+                <span class="m-l-5">IND</span>
+            </a>
+            <!-- Currency -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <span class="m-l-5">&#x20B9; INR</span>
+            </a>
+            <!-- Right -->
+            <a href="#0" class="link-icon m-lr-10 m-t-6">
+                <img src="img/icons/chat-white.svg" title="Chat" />
+            </a>
+            <a href="#0" class="link-icon m-lr-10 m-t-6">
+                <img src="img/icons/help-white.svg" title="Help" />
+            </a>
+            <!-- Begin: App Hamburger Menu -->
+            <div class="dropdowns m-t-2" id="hamburger">
+                <a class="toggleMenu" href="#">Features</a>
+                <ul class="nav" id="nav-bar">
+                    <li class="test">
+                        <a href="#">
+                            <img src="img/buttons/btn-group-button-white.png" alt="Apps" />
+                        </a>
+                        <ul>
+                            <li>
+                                <div class="hamberger-menu">
+                                    <div class="item-container">
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/talk.png" alt="Talk Room" />
+                                                <span>Talk Room</span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/crm.png" alt="CRM" />
+                                                <span>CRM</span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/cart.png" alt="Shop" />
+                                                <span>Shop</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-container m-t-20">
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/marketplace.png" alt="Marketplace" />
+                                                <span>Marketplace</span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/professional.png" alt="Professionals" />
+                                                <span>Professionals</span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/job.png" alt="Jobs" />
+                                                <span>Jobs</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-container m-t-20">
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/courses.png" alt="Courses" />
+                                                <span>Courses</span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/apps.png" alt="Apps" />
+                                                <span>Apps</span>
+                                            </a>
+                                        </div>
+                                        <div class="icon-holder">
+                                            <a href="">
+                                                <img src="img/icons/startup.png" alt="Startup" />
+                                                <span>Statup</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- End: pp Hamburger Menu -->
+            <!-- Begin: Avtar and Login -->
+            <div class="d-flex">
+                <div class="dropdown me-1">
+                    <img src="img/icons/avtar.svg" title="Profile" class="m-l-10 m-t-3 dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                    <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Avtar and Login -->
+        </div>
+    </div>
+    <!-- End: Top Main Menu -->
+    <!-- Begin: Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="mega-menu">
+            <!-- Begin: First Menu -->
+            <div class="menu" id="menu-first">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuSecond()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link active-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: First Menu -->
+            <!-- Begin: Second Menu -->
+            <div class="menu" id="menu-second">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuThird()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: Second Menu -->
+            <!-- Begin: Third Menu -->
+            <div class="menu" id="menu-third">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuFourth()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: Third Menu -->
+            <!-- Begin: Fourth Menu -->
+            <div class="menu" id="menu-fourth">
+                <div class="loading-data">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="m-t-10">Loading...</div>
+                </div>
+
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+            </div>
+            <!-- End: Fourth Menu -->
+        </div>
+    </div>
+    <!-- End: Mega Menu -->
+    <!-- Begin: Top Mobile Menu-->
+    <div class="top-mobile-menu">
+        <!-- Toggle Categories -->
+        <div>
+            <a href="javascript:void(0);" onclick="ToggleMenu('menu-first')" title="Categories" id="toggle-menu">
+                <img src="img/icons/btn-toggle.png" alt="Categories" />
+            </a>
+        </div>
+        <!-- Logo -->
+        <div>
+            <a href="#0" title="O2YO" id="logo" class="m-l-5">
+                <img src="img/logo.svg" alt="O2YO" />
+            </a>
+        </div>
+        <!-- Search -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Search" onclick="ToggleAdminMobileSearchBar()">
+            <img src="img/icons/search.png" class="img-20" title="Search" />
+        </a>
+        <!-- Configure -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Notification">
+            <img src="img/icons/cog.svg" class="img-20" title="Search" />
+        </a>
+        <!-- Begin: Switch App -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Switch App" id="open-drawer">
+            <img src="img/buttons/btn-group-button.png" class="img-20" title="Switch App" />
+        </a>
+
+        <!-- Switch App Mobile Drawer -->
+        <div class="mobile-drawer">
+            <ul>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/talk.png" alt="Talk Room" />
+                        <span>Talk Room</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/crm.png" alt="CRM" />
+                        <span>CRM</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/cart.png" alt="Shop" />
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/marketplace.png" alt="Marketplace" />
+                        <span>Marketplace</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/professional.png" alt="Professionals" />
+                        <span>Professionals</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/job.png" alt="Jobs" />
+                        <span>Jobs</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/courses.png" alt="Courses" />
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/apps.png" alt="Apps" />
+                        <span>Apps</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/startup.png" alt="Startup" />
+                        <span>Statup</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End: Switch App -->
+        <!-- User Profile -->
+        <div class="d-flex">
+            <div class="dropdown me-1">
+                <img src="img/icons/avtar.svg" title="Profile" class="img-20 m-l-10 m-t-3 dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Search Bar -->
+    <div class="top-mobile-search">
+        <input type="text" class="search-input-mobile" placeholder="Search here..." />
+        <a href="#0" class="link-icon m-l-10">
+            <img src="img/buttons/btn-search.svg" title="Search" />
+        </a>
+    </div>
+    <!-- End: Top Mobile Menu -->
+    <!-- Begin: Keyword Scroller -->
+    <div class="container-transparent-d-flex">
+        <div class="keyword-scoroller owl-carousel owl-loaded owl-drag">
+            <a href="#0">chair lift essential model</a>
+            <a href="#0">stairlift motor</a>
+            <a href="#0">elevator cabin</a>
+            <a href="#0">omega platformlift</a>
+            <a href="#0">landing operating panel</a>
+            <a href="#0">lift button panel</a>
+            <a href="#0">lift guide rail</a>
+            <a href="#0">elevator gate lock</a>
+            <a href="#0">lift safety gear</a>
+            <a href="#0">main pedestal control</a>
+            <a href="#0">stairlift control joystick</a>
+            <a href="#0">lift traction machine</a>
+            <a href="#0">elevator car frame</a>
+            <a href="#0">stretcher hospital lift</a>
+            <a href="#0">elevator counterweight</a>
+            <a href="#0">chair lift rail system</a>
+            <a href="#0">elevator speed governor</a>
+            <a href="#0">stairlift battery backup</a>
+            <a href="#0">lift door operator</a>
+            <a href="#0">stratos outdoor stairlift</a>
+            <a href="#0">elevator wire rope</a>
+            <a href="#0">delta platform lift</a>
+            <a href="#0">lift door safety sensor</a>
+            <a href="#0">elevator display panel</a>
+            <a href="#0">lift car door hanger</a>
+            <a href="#0">stairlift seat belt</a>
+            <a href="#0">elevator hydraulic pump</a>
+            <a href="#0">lift control panel</a>
+            <a href="#0">alpha curve stairlift</a>
+            <a href="#0">elevator brake system</a>
+        </div>
+    </div>
+    <!-- End: Keyword Scroller -->
+    <!-- Begin: Body -->
+    <div class="container-fluid m-t-5">
+        <div class="container-transparent">
+            <!-- Begin: product-card-masonary -->
+            <div class="product-card-masonary">
+                <div class="masonry">
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/111108496_MzAwLTI5Mi0wOGVjNzNhODZhLTE.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Nesciunt aspernatur eaque similique laudantium a</h3>
+                            <p class="masonry-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/151091269_MzAwLTI4My1hYzE1ZmVlNWIzLTE.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Consequatur adipisci neque possimus quod ut quidem</h3>
+                            <p class="masonry-description">Consectetur adipisicing elit. Sit enim ipsam mollitia repellat nemo.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/161987603_MzAwLTQwMC05NzNiZTIyZjFj.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Adipisci alias ullam est accusamus</h3>
+                            <p class="masonry-description">Adipisci repellendus ratione laudantium nisi eaque voluptatem fuga quod hic.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/74111557_MzAwLTMwMC1mZDFmMmI3NmVh.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Dolor sit amet, consectetur adipisicing elit</h3>
+                            <p class="masonry-description">Vitae est numquam, dolore, ipsum tempora molestiae.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/105134345_MzAwLTMwMC03YzczM2Q5Yzll.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/160430425_MzAwLTQ5Mi1iYjI3OTc4YTA5.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Nesciunt aspernatur eaque similique laudantium a</h3>
+                            <p class="masonry-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/153761798_MzAwLTQyMy1jMjE4YmQ1MjA2.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Consequatur adipisci neque possimus quod ut quidem</h3>
+                            <p class="masonry-description">Consectetur adipisicing elit. Sit enim ipsam mollitia repellat nemo.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/40686772_img-20190327-162847_1_300x600.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Adipisci alias ullam est accusamus</h3>
+                            <p class="masonry-description">Adipisci repellendus ratione laudantium nisi eaque voluptatem fuga quod hic.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/169042541_MzAwLTQwMC00OGI5ZGZmZWEx.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Dolor sit amet, consectetur adipisicing elit</h3>
+                            <p class="masonry-description">Vitae est numquam, dolore, ipsum tempora molestiae.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/117141185_MzAwLTI4My04YmQ1MjEyNGEx.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/117141185_MzAwLTI4My04YmQ1MjEyNGEx.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/14625097_tmpdoodle1517084314223_1_300x400.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/114393207_MzAwLTI0MC05NDNjNDIzM2M5.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/166911174_MzAwLTYwNC00NmNhYTkwNDhh.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/116498385_MzAwLTUzNC1mYzUyNjEwYmRkLTE.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <div class="masonry-content">
+                            <img src="https://pictures-nigeria.jijistatic.net/157745962_MzAwLTQwMC01MWI0N2Q0NGY0.webp" alt="Dummy Image">
+                            <h3 class="masonry-title">Veritatis aut repellendus</h3>
+                            <p class="masonry-description">Expedita voluptate similique ad harum dolorem nam ipsa repellat quos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: product-card-masonary -->
+            <!-- Begin: Download App -->
+            <div class="grid-download-app mt-3">
+                <div class="bg-white text-center">
+                    <img src="img/download-app/app.jpg" alt="Download App" class="w-100" />
+                </div>
+                <div class="bg-white text-center">
+                    <div class="text-first">
+                        Expand, Sell, And Source: Master the Global Arena
+                    </div>
+                    <div class="text-second">
+                        Find great products to sell, connect with new opportunities and expand your networking!
+                    </div>
+                    <div class="text-third">
+                        <input type="text" class="input-default" placeholder="e.g. abc@xyz.com" />
+                        <button class="m-l-10">Send Link</button>
+                    </div>
+                    <div class="text-fourth m-t-10">
+                        We will send you a link, open it on your phone to download the App
+                    </div>
+                    <div class="text-fifth m-t-10">
+                        Get the App Now
+                    </div>
+                    <div class="m-t-20 download-app-button">
+                        <img src="img/download-app/button-google-playstore.svg" alt="Google Playstore" />
+                        <img src="img/download-app/button-app-playstore.svg" alt="Playstore" class="m-l-20" />
+                    </div>
+                </div>
+            </div>
+            <!-- End: Download App -->
+            <!-- Begin: Signup For Free -->
+            <div class="bg-white-p-0 pad-20 w-100 mt-3 mb-3 text-center">
+                <div class="text-22 text-bold-500">Signup For Free And Promote Your Business Worldwide</div>
+                <div class="mt-2 text-16">Join over 4,000+ startups already growing with O2YO</div>
+                <div class="d-flex justify-content-center mt-2">
+                    <a href="#0" class="button-blue-default">Get Started</a>
+                    <a href="#0" class="button-outline-grey m-l-20">Send Eqnuiry</a>
+                </div>
+            </div>
+            <!-- End: Signup For Free -->
+        </div>
+    </div>
+    <!-- End: Body -->
+    <!-- Begin: Footer Main Menu -->
+    <div class="container-fluid bg-white m-b-5">
+        <div class="gird-footer-menu">
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        About O2YO
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="About Us">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="What We Do">
+                                What We Do
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Why Choose Us">
+                                Why Choose Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Success Stories">
+                                Success Stories
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">Help & Support</strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Help & Support">
+                                Help & Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Feedback & Suggestions">
+                                Feedback & Suggestions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Complaints">
+                                Complaints
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Jobs & Career">
+                                Jobs & Career
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Contact Us">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        For Buyers
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Global Sourcing">
+                                Global Sourcing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Request For Quotation (RFQ)">
+                                Request For Quotation (RFQ)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Search Products & Suppliers">
+                                Search Products & Suppliers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Audio & Video Conferencing">
+                                Audio & Video Conferencing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Followup & Bookmarks">
+                                Followup & Bookmarks
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        For Suppliers
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Buy Leads">
+                                Buy Leads
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Sell Offers">
+                                Sell Offers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Product Promotion">
+                                Product Promotion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Website & SEO">
+                                Website & SEO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Website & SEO">
+                                Website & SEO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-b-5">
+        <div class="grid-footer-powered-by d-flex justify-content-between">
+            <div>
+                Copyright 2025 @ All Rights Reserved
+            </div>
+            <div class="float-end">
+                <a href="#0" class="link-default">
+                    Powered By I2OK
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End: Footer Main Menu -->
+    <!-- Begin: Mobile Sticky Footer Menu -->
+    <div class="footer-mobile-menu">
+        <div>
+            <a href="#0" title="Home">
+                <img src="img/icons/home.svg" alt="Home" />
+                <span>Home</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Talk">
+                <img src="img/icons/chat.svg" alt="Talk" />
+                <span>Talk</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="RFQ">
+                <img src="img/icons/cart.svg" alt="RFQ" />
+                <span>RFQ</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Pricing">
+                <img src="img/icons/pricing.svg" alt="Pricing" />
+                <span>Pricing</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Help">
+                <img src="img/icons/arrow-up.svg" alt="Goto Top" id="goToTopButton" />
+                <span>Top</span>
+            </a>
+        </div>
+    </div>
+    <!-- End: Mobile Sticky Footer Menu -->
+    <!-- Begin: Mobile Category Drill Down Menu -->
+    <nav class="nav-drill">
+        <ul class="nav-items nav-level-1">
+            <!-- Health & Beauty -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Health & Beauty
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Health & Beauty
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Apparel & Fashion -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Apparel & Fashion
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Apparel & Fashion
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Chemicals -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Escalators Parts
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Escalators Parts
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Installation & Maintenance Kits -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Installation & Maintenance Kits
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Installation & Maintenance Kits
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Energy and Sustainability -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Energy and Sustainability
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Energy and Sustainability
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Escalator Innovations -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Escalator Innovations
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Escalator Innovations
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Hoistway Equipment -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Hoistway Equipment
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Hoistway Equipment
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- Modernization and Upgrades -->
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Modernization and Upgrades
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                        <a class="nav-link text-bold" href="#">
+                            Modernization and Upgrades
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Personal Care Products
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Personal Care Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Face Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sanitary Napkins
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Safety Masks
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hand Sanitizers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Wet Pipes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Medinces & Drugs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Medinces & Drugs
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cought Cyrups
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Multivitamin Tablets
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Anti Allergic Medinces
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pharmaceutical Injections
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Soap & Handwash
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link text-bold" href="#">
+                                    Soap & Handwash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liquid Hand Wash
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ayurvedic Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ketoconazole Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gylcerine Soap
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Antisepctic Hand Wash
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- View All Categories -->
+            <li class="nav-item">
+                <a class="nav-link text-blue-default text-bold" href="#">
+                    View All Categories
+                </a>
+            </li>
+            <!-- Social Sites Icons Links -->
+            <li class="nav-item pad-10">
+                <a href="#">
+                    <img src="img/icons/facebook-circle.svg" class="img-30-circle link-default" alt="Facebook" />
+                </a>
+                <a href="#">
+                    <img src="img/icons/youtube-circle.svg" class="img-30-circle m-l-10 link-default" alt="Youtube" />
+                </a>
+                <a href="#">
+                    <img src="img/icons/instagram-circle.svg" class="img-30-circle m-l-10 link-default" alt="Instagram" />
+                </a>
+                <a href="#">
+                    <img src="img/icons/linkedin-circle.svg" class="img-30-circle m-l-10 link-default" alt="Linkedin" />
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End: Mobile Category Drill Down Menu -->
+    <!-- Javascript -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dropdown -->
+    <script type="text/javascript" src="vendors/jquery/code.jquery.com_jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="vendors/dropdown/dropdowns.js"></script>
+    <script type="text/javascript" src="js/mobile-drill-down-menu.js"></script>
+
+    <!-- Begin: Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        /* Begin: Initialize Dropdown */
+        $(".dropdowns").dropdowns();
+        /* End: Initialize Dropdown */
+
+        /* Begin: Goto Top */
+        const goToTopButton = document.getElementById('goToTopButton');
+
+        goToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        /* End: Goto Top */
+
+        /* Begin: Owl Carousel For Keywords */
+        $(document).ready(function () {
+            $('.keyword-scoroller').owlCarousel({
+                loop: true,
+                stagePadding: 100,
+                margin: 5,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 6
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            })
+        });
+        /* End: Owl Carousel For Keywords */
+
+        /* Begin: Owl Carousel For Service Cards */
+        $(document).ready(function () {
+            $('.card-service-container').owlCarousel({
+                loop: true,
+                stagePadding: 100,
+                margin: 5,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 6
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            })
+        });
+        /* End: Owl Carousel For Service Cards */
+
+        /* Begin: Owl Carousel For User Cards */
+        $(document).ready(function () {
+            $('.card-user-container').owlCarousel({
+                loop: true,
+                stagePadding: 100,
+                margin: 5,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 6
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            })
+        });
+        /* End: Owl Carousel For Service Cards */
+
+        /* Begin: Mega Menu */
+        function ToggleMenuFirst() {
+            var menu1 = document.getElementById('menu-first');
+            if (menu1.style.display === "none" || menu1.style.display === "") {
+                // Show menu
+                menu1.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu1.style.display = "none";
+            }
+        }
+
+        function ToggleMenuSecond() {
+            // Show menu-second
+            var menu2 = document.getElementById('menu-second');
+            menu2.style.display = "inline-block";
+
+            // Hide menu-fourth
+            var menu4 = document.getElementById('menu-fourth');
+            menu4.style.display = "none";
+
+            // Hide menu-third
+            var menu3 = document.getElementById('menu-third');
+            menu3.style.display = "none";
+        }
+
+        function ToggleMenuThird() {
+            var menu3 = document.getElementById('menu-third');
+            if (menu3.style.display === "none" || menu3.style.display === "") {
+                // Show menu
+                menu3.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu3.style.display = "none";
+            }
+        }
+
+        function ToggleMenuFourth() {
+            var menu4 = document.getElementById('menu-fourth');
+            if (menu4.style.display === "none" || menu4.style.display === "") {
+                // Show menu
+                menu4.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu4.style.display = "none";
+            }
+        }
+
+        function OpenFirstMenu() {
+            // open menu-first
+            var m1 = document.getElementById('menu-first');
+            m1.style.display = "inline-block";
+            // btn-toggle
+            var btnToggle = document.getElementById('btn-toggle');
+            btnToggle.style.display = "none";
+            // btn-toggle-close
+            var btnToggleClose = document.getElementById('btn-toggle-close');
+            btnToggleClose.style.display = "inline-block";
+        }
+
+        function CloseAllMenu() {
+            // get menu by id
+            var m1 = document.getElementById('menu-first');
+            var m2 = document.getElementById('menu-second');
+            var m3 = document.getElementById('menu-third');
+            var m4 = document.getElementById('menu-fourth');
+            // display:none
+            m1.style.display = "none";
+            m2.style.display = "none";
+            m3.style.display = "none";
+            m4.style.display = "none";
+            // btn-toggle-close
+            var btnToggleClose = document.getElementById('btn-toggle-close');
+            btnToggleClose.style.display = "none";
+            // btn-toggle
+            var btnToggle = document.getElementById('btn-toggle');
+            btnToggle.style.display = "inline-block";
+        }
+        /* End: Mega Menu */
+    </script>
+</body>
+</html>

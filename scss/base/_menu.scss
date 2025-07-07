@@ -1,0 +1,64 @@
+﻿@import "../abstracts/_colors.scss";
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/_links.scss";
+@import "../base/_fonts.scss";
+
+
+// Begin: verticle-menu-1
+.verticle-menu-1 {
+    background-color: $c-white;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 100%;
+
+    .title {
+        font-size: 18px;
+        font-family: 'Itim', cursive;
+        height: 35px;
+        padding: 3px 3px 3px 10px;
+        border-radius: 5px;
+        border-bottom: 1px solid $c-grey-1;
+    }
+
+    .active {
+        background-color: $c-body-bg-1;
+        border-bottom: 1px solid $c-grey-7;
+        border-top: 1px solid $c-grey-7;
+    }
+
+    .status {
+        float: right;
+        height: 12px;
+        width: auto;
+        margin-top: 5px;
+    }
+
+    li {
+        border-bottom: 1px solid $c-grey-1;
+
+        img {
+            height: 12px;
+            width: auto;
+            margin-top: -3px;
+            margin-right: 5px;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            font-size: 14px;
+            display: block;
+            padding: 3px 3px 3px 10px;
+            text-decoration: none;
+            color: #333;
+
+            &:hover {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+}
+// End: verticle-menu-1

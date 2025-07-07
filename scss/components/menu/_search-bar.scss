@@ -1,0 +1,70 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+// Begin: search-input
+.search-input {
+    height: 35px;
+    width: 300px;
+    border-top: 2px solid $c-blue-default;
+    border-bottom: 2px solid $c-blue-default;
+    border-left: 2px solid $c-blue-default;
+    border-right: 0px solid $c-blue-default;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+// End: search-input
+
+// Begin: search-input-wide
+.search-input-wide {
+    height: 40px;
+    width: 600px;
+    border-top: 2px solid $c-blue-default;
+    border-bottom: 2px solid $c-blue-default;
+    border-left: 2px solid $c-blue-default;
+    border-right: 0px solid $c-blue-default;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+}
+
+.search-input-wide:focus {
+    outline: none;
+}
+// End: search-input-wide
+
+// Begin: Search Button
+.search-btn {
+    height: 35px;
+    width: auto;
+    border-top: 2px solid $c-blue-default;
+    border-bottom: 2px solid $c-blue-default;
+    border-left: 0px solid $c-blue-default;
+    border-right: 2px solid $c-blue-default;
+    border-radius: 0px 5px 5px 0px;
+    padding: 2px;
+    margin-left: -20px;
+}
+
+.search-btn-white {
+    height: 40px;
+    width: 100px;
+    background-color:#ffd800;
+    border-top: 2px solid $c-blue-default;
+    border-bottom: 2px solid $c-blue-default;
+    border-left: 0px solid $c-blue-default;
+    border-right: 2px solid $c-blue-default;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px;
+    margin-left: -35px;
+    text-align:center;
+
+    a {
+        color:$c-black-1 !important; 
+    }
+}
+// End: Search Button

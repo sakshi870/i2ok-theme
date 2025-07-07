@@ -1,0 +1,150 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+// Begin: Top Menu White Background
+.top-main-menu {
+    background-color: $c-white;
+    padding: 8px 0px 8px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important;
+
+    .link-text {
+        font-size: 15px;
+        color: black;
+        margin-left: 15px;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+            color: $c-blue-default;
+            transform: scale(1.05);
+        }
+    }
+
+    .link-icon {
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+        color: $c-black-1;
+
+        &:hover {
+            filter: brightness(1.5);
+            transition: color 0.3s, transform 0.3s;
+            color: $c-black-1;
+        }
+
+        img {
+            height: 20px;
+        }
+    }
+
+    .logo {
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+            filter: brightness(1.5);
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        img {
+            height: 35px;
+        }
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1024px) {
+    #resources, #features, #pricing {
+        display: none;
+    }
+}
+
+@media (max-width: 925px) {
+    .top-main-menu {
+        display: none;
+    }
+}
+// End: Top Menu White Background
+
+// Begin: Top Menu Blue Background
+.top-main-blue-dark {
+    background-color: $c-blue-default;
+    padding: 8px 0px 8px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999 !important;
+
+    .link-text {
+        font-size: 15px;
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+            color: $c-white;
+            transform: scale(1.05);
+        }
+    }
+
+    .link-icon {
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+        color: $c-white;
+        font-size:14px;
+        font-weight: 500;
+
+        &:hover {
+            filter: brightness(1.5);
+            transition: color 0.3s, transform 0.3s;
+            color: $c-white;
+        }
+
+        img {
+            height: 20px;
+        }
+    }
+
+    .logo {
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+            filter: brightness(1.5);
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        img {
+            height: 35px;
+        }
+    }
+
+    .nav a:hover {
+        background: none !important;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1024px) {
+    #resources, #features, #pricing {
+        display: none;
+    }
+}
+
+@media (max-width: 925px) {
+    .top-main-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 925px) {
+    .top-main-blue-dark {
+        display: none;
+    }
+}
+// End: Top Menu White Background

@@ -1,0 +1,2113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Basic Meta Info -->
+    <title>O2YO B2B Portal</title>
+    <meta name="keywords" content="">
+    <meta name="author" content="Shafi Shaikh" />
+    <meta name="description" content="">
+
+    <!-- OpenGraph Meta -->
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:url" content="" />
+
+    <!-- Meta For Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@bhupeshimself">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image" content="logo.png">
+    <meta name="twitter:site" content="@bhupeshimself">
+    <meta name="twitter:description" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+    <!-- Stylesheets -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/themes/frontend/listing/_listing.min.css">
+
+    <!-- Dropdown -->
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns.css">
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns-skin-discrete.css">
+
+    <!-- Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <!-- Begin: Top Main Menu -->
+    <div class="container-fluid top-main-menu-minimal">
+        <div class="container-transparent-d-flex">
+            <a href="#0" class="logo m-t-2">
+                <img src="img/logo.svg" title="Home" />
+            </a>
+            <!-- Categories Dropdown -->
+            <a href="javascript:void(0);" onclick="OpenFirstMenu()" class="m-t-7" id="btn-toggle">
+                <img src="img/buttons/toggle-open.png" class="toggle-button" title="categories" />
+            </a>
+            <!-- Categories Dropdown Close All Menu -->
+            <a href="javascript:void(0);" onclick="CloseAllMenu()" class="m-t-7" id="btn-toggle-close">
+                <img src="img/buttons/toggle-close.png" class="toggle-button" title="categories" />
+            </a>
+            <!-- Search -->
+            <input type="text" class="search-bar" placeholder="Search here..." />
+            <span class="search-button">
+                <a href="#0" class="link-icon m-r-5">
+                    <img src="img/buttons/btn-search.svg" title="Search" />
+                </a>
+            </span>
+            <!-- Text Link -->
+            <a href="#0" class="btn-call-to-action blue">
+                POST FREE AD
+            </a>
+            <!-- Country -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <img src="img/flags/circle/in.png" title="Country" />
+                <span class="m-l-5">IND</span>
+                <b></b>
+            </a>
+            <!-- Currency -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <span class="m-l-5">&#x20B9; INR</span>
+                <b></b>
+            </a>
+            <!-- Services -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <span class="m-l-5">ABOUT</span>
+            </a>
+            <!-- Services -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <img src="img/icon-billing/coin-2.svg" title="coins" />
+                <span>5000 COINS</span>
+            </a>
+            <!-- Chat -->
+            <a href="#0" class="link-icon m-lr-10 m-t-6">
+                <img src="img/icons/chat.svg" title="Chat" />
+            </a>
+            <!-- Help -->
+            <a href="#0" class="link-icon m-lr-10 m-t-6">
+                <img src="img/icons/help.svg" title="Help" />
+            </a>
+            <!-- Begin: Avtar and Login -->
+            <div class="d-flex">
+                <div class="dropdown me-1">
+                    <img src="img/icons/avtar.svg" title="Profile" class="m-l-10 m-t-3 dropdown-toggle"
+                        id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false"
+                        data-bs-offset="10,20" />
+                    <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Avtar and Login -->
+        </div>
+    </div>
+    <!-- End: Top Main Menu -->
+    <!-- Begin: Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="mega-menu">
+            <!-- Begin: First Menu -->
+            <div class="menu" id="menu-first">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuSecond()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link active-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: First Menu -->
+            <!-- Begin: Second Menu -->
+            <div class="menu" id="menu-second">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuThird()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: Second Menu -->
+            <!-- Begin: Third Menu -->
+            <div class="menu" id="menu-third">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuFourth()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: Third Menu -->
+            <!-- Begin: Fourth Menu -->
+            <div class="menu" id="menu-fourth">
+                <div class="loading-data">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="m-t-10">Loading...</div>
+                </div>
+
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+                <!-- Category -->
+                <!--<a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                </a>-->
+            </div>
+            <!-- End: Fourth Menu -->
+        </div>
+    </div>
+    <!-- End: Mega Menu -->
+    <!-- Begin: Top Mobile Menu-->
+    <div class="top-mobile-menu">
+        <!-- Toggle Categories -->
+        <div>
+            <a href="javascript:void(0);" onclick="ToggleMenu('menu-first')" title="Categories" id="toggle-menu">
+                <img src="img/icons/btn-toggle.png" alt="Categories" />
+            </a>
+        </div>
+        <!-- Logo -->
+        <div>
+            <a href="#0" title="O2YO" id="logo" class="m-l-5">
+                <img src="img/logo.svg" alt="O2YO" />
+            </a>
+        </div>
+        <!-- Search -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Search" onclick="ToggleAdminMobileSearchBar()">
+            <img src="img/icons/search.png" class="img-20" title="Search" />
+        </a>
+        <!-- Configure -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Notification">
+            <img src="img/icons/cog.svg" class="img-20" title="Search" />
+        </a>
+        <!-- User Profile -->
+        <div class="d-flex">
+            <div class="dropdown me-1">
+                <img src="img/icons/avtar.svg" title="Profile" class="img-20 m-l-10 m-t-3 dropdown-toggle"
+                    id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Search Bar -->
+    <div class="top-mobile-search">
+        <input type="text" class="search-input-mobile" placeholder="Search here..." />
+        <a href="#0" class="link-icon m-l-10">
+            <img src="img/buttons/btn-search.svg" title="Search" />
+        </a>
+    </div>
+    <!-- End: Top Mobile Menu -->
+    <!-- Begin: Body -->
+    <div class="container-fluid m-t-15">
+        <div class="container-transparent">
+            <!-- begin: category-menu -->
+            <div class="category-menu owl-carousel owl-loaded owl-drag  m-t-10  ">
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder active">
+                        <img src="img/category-menu/product.png" title="product" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">B2B</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/service.png" title="services" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Services</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/digital-good.png" title="digital goods" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Digital Goods</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/app-software.png" title="apps & softwares" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Apps & Soft...</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/mobile.png" title="mobile & tabs" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Mobile & Tabs</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/laptop-computer.png" title="laptop computer" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Laptop & Com.</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/home-appliances.png" title="home appliances" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Home Appl.</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/vehicle.png" title="vehicles" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Vehicles</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/real-estate.png" title="real estate" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Real Estate</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/job.png" title="job" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Jobs</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/tour-travel.png" title="tours & travels" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Tours & Travels</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/freelancer.png" title="freelancers" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Freelancers</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/tutor.png" title="tutors" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Tutors</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/course.png" title="courses" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Courses</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/art-craft.png" title="art & craft" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Art & Craft</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/coworking.png" title="coworking" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Coworking</a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category">
+                    <div class="icon-holder">
+                        <img src="img/category-menu/business-opportunity.png" title="business opportunity" />
+                    </div>
+                    <div class="name">
+                        <a href="#0">Business Opp..</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end: category-menu -->
+            <!-- begin: form-search-filter -->
+            <div class="form-search-filter">
+                <!-- category -->
+                <div>
+                    <lable class="filter-label">Categories</lable>
+                    <select>
+                        <option selected value="all">Choose one...</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                    </select>
+                </div>
+                <!-- category -->
+                <div>
+                    <select>
+                        <option selected value="all">Choose one...</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                    </select>
+                </div>
+                <!-- category -->
+                <div>
+                    <select>
+                        <option selected value="all">Choose one...</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                    </select>
+                </div>
+                <!-- category -->
+                <div>
+                    <select>
+                        <option selected value="all">Choose one...</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                        <option value="">Health & Beauty</option>
+                        <option value="">Apparels & Fashion</option>
+                        <option value="">Chemicals</option>
+                        <option value="">Construction & Interior</option>
+                        <option value="">Electronics & Electricals</option>
+                        <option value="">Automobiles & Motors</option>
+                        <option value="">Hospitals & Medical</option>
+                        <option value="">Gifts & Crafts</option>
+                        <option value="">Consumer Goods</option>
+                        <option value="">Printing & Packaging</option>
+                        <option value="">Pharmaceuticals</option>
+                    </select>
+                </div>
+                <!-- city -->
+                <div>
+                    <lable>City</lable>
+                    <select>
+                        <option selected>Nearby (Lat & Long)</option>
+                        <option value="">Agra</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">Bangalore</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Chandigarh</option>
+                        <option value="">Chennai</option>
+                        <option value="">Coimbatore</option>
+                        <option value="">Delhi</option>
+                        <option value="">Gurugram</option>
+                        <option value="">Hyderabad</option>
+                        <option value="">Indore</option>
+                        <option value="">Jaipur</option>
+                        <option value="">Kanpur</option>
+                        <option value="">Kochi</option>
+                        <option value="">Kolkata</option>
+                        <option value="">Lucknow</option>
+                        <option value="">Ludhiana</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Navi Mumbai</option>
+                        <option value="">Nagpur</option>
+                        <option value="">Patna</option>
+                        <option value="">Pune</option>
+                        <option value="">Surat</option>
+                        <option value="">Vadodara</option>
+                        <option value="">Varanasi</option>
+                    </select>
+                </div>
+                <!-- condition -->
+                <div>
+                    <lable>Condition</lable>
+                    <select>
+                        <option selected value="all">All</option>
+                        <option value="">New</option>
+                        <option value="">Refurbished</option>
+                        <option value="">Used</option>
+                        <option value="">Heavily Used</option>
+                    </select>
+                </div>
+                <!-- sort -->
+                <div>
+                    <lable>Sort</lable>
+                    <select>
+                        <option value="">Latest Products</option>
+                        <option value="">Low to High Price</option>
+                        <option value="">High to Low Price</option>
+                        <option value="">Best Sellers</option>
+                        <option value="">Most Viewed</option>
+
+                    </select>
+                </div>
+                <!-- sort -->
+                <div>
+                    <lable>Free Samples</lable>
+                    <select>
+                        <option value="">Yes</option>
+                        <option value="">No</option>
+                    </select>
+                </div>
+                <div>
+                    <a href="" class="btn-filter"><img src="img/icons-color/cancel.png" /> Reset Filters</a>
+                </div>
+            </div>
+            <!-- hide show filter-->
+            <a class="toggle-filters"></a>
+            <!-- end: form-search-filter -->
+            <!-- Begin: Latest Products-->
+            <div class="grid-latest-products  m-t-10">
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/product-001.jpeg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray
+                            Direct Cool Single Door Refrigerator(RD EDGE 205B</div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default green">
+                    <div class="slider">
+                        <img src="img/dummy-pics/002.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            2710 X 2130 mm NIDO HYDRAULIC DOCK LEVELER:- ND-DL- 10, Mild
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-1" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="like m-l-10" title="Featured Ad">
+                                <span class="m-l-2">
+                                    <img src="img/badges/005.png" />
+                                    Featured
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/003.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            2 Post 10-15 m Car Lift Elevator, For Parking, Car Capacity: 3000kg
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/004.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Goods Lift Industrial Hydraulic Elevator, Max Persons: 13 Persons
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">2.3k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/005.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Chrome Forged U-Clamp 13mm with washer
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product -->
+
+
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/006.webp" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Industrial Goods Lift Elevator, Max Capacity: 6 Ton
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">13</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/007.webp" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Metal Lift Spare Parts, For Industrial Premises
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">44</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/008.webp" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Hospital Stretcher Elevator, Max Persons: 6
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">10k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/009.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">Motherboard - Dell Server R530 / R430, 2600 Series Proc</div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">1k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/010.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">Motherboard - Dell Server R530 / R430, 2600 Series Proc</div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">33k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Latest Products-->
+            <!-- Begin: Recent Users -->
+            <div class="main-menu-plans-secation">
+                <div class="main-menu-ads-plans left-grid-carousel">
+                    <div class="main-meni-plans-heading">1 Ad Solutions for Individuals, Housewives & Professionals
+                    </div>
+                    <div class="owl-carousel owl-theme  ">
+                        <!--<div class="item">-->
+                        <div class="main-menu-items-ads-plans">
+
+                            <div>
+                                <div class="main-menu-info-ads-plans">Free Ad</div>
+                                <div class="main-menu-info-ads-plans">7 Days</div>
+                                <div class="main-menu-info-noncolour-freead">Renew Weekly</div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                        <div class="main-menu-items-ads-plans">
+                            <div>
+                                <div class="main-menu-info-ads-plans-badges-seaction">
+                                    <img src="img/badges/005.png" alt="Your Image"
+                                        class="main-menu-info-badges-img-plans" />
+                                    <div> ₹ 49</div> 
+                                </div>
+                                <div class="main-menu-info-ads-plans">10 Days</div>
+                                <div class="main-menu-info-colour-plans">Featured Ad</div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                        <div class="main-menu-items-ads-plans">
+                            <div>
+                                <div class="main-menu-info-ads-plans-badges-seaction">
+                                    <img src="img/badges/005.png" alt="Your Image"
+                                        class="main-menu-info-badges-img-plans" />
+                                    <!--<div class="main-menu-info-ads-plans">-->
+                                    <div> ₹ 99</div>
+                                </div>
+                                <div class="main-menu-info-ads-plans">20 Days</div>
+                                <div class="main-menu-info-colour-plans">Featured Ad</div>
+                            </div>
+                        </div>
+                        <!--</div>
+                        <div class="item">-->
+                        <div class="main-menu-items-ads-plans">
+                            <div>
+                                <!--<div class="main-menu-info-ads-plans">-->
+                                <div class="main-menu-info-ads-plans-badges-seaction">
+                                    <img src="img/badges/005.png" alt="Your Image"
+                                        class="main-menu-info-badges-img-plans" />
+                                    ₹ 149
+                                </div>
+                                <div class="main-menu-info-ads-plans">30 Days</div>
+                                <div class="main-menu-info-colour-plans">Featured Ad</div>
+                            </div>
+                        </div>
+                        <!--</div>
+                        <div class="item">-->
+                        <div class="main-menu-items-ads-plans">
+                            <div>
+                                <div class="main-menu-info-ads-plans-badges-seaction">
+                                    <!--<div class="main-menu-info-ads-plans">-->
+                                    <img src="img/badges/005.png" alt="Your Image"
+                                        class="main-menu-info-badges-img-plans" />
+                                    ₹ 2999
+                                </div>
+                                <div class="main-menu-info-ads-plans">7 Days</div>
+                                <div class="main-menu-info-colour-plans">Renew Weekly</div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+
+                    </div>
+                </div>
+
+                <!--</div>-->
+
+                <div class="main-menu-ads-plans">
+                    <div class="main-meni-plans-heading">Bulk Plans for Businesses, Freelancers & Creators Like You,
+                        <span class="main-meni-plans-subheading">Compare 👆 Plans</span>
+                    </div>
+                    <div class="compare-and-Plan-seaction">
+
+                        <div class="card-main-menu-ads-plans">
+                            <div class="subheading-main-menu-ads-plans-first">Startup plan</div>
+                            <div class="main-menu-compares-plans ">
+                                <div>
+                                    <div class="main-menu-info-ads-plans"> <img src="img/badges/005.png"
+                                            alt="Your Image" /> ₹ 2999 </div>
+                                    <div class="main-menu-info-ads-plans"> 10 Ads / 3 Months </div>
+                                    <div class="main-menu-info-colour-plans"> Featured Ad </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-main-menu-ads-plans">
+
+                            <div class="subheading-main-menu-ads-plans-second">Growth plan</div>
+                            <div class="main-menu-compares-plans ">
+                                <div>
+                                    <div class="main-menu-info-ads-plans"> <img src="img/badges/005.png"
+                                            alt="Your Image" /> ₹ 8999 </div>
+                                    <div class="main-menu-info-ads-plans"> 30 Ads / 6 Months </div>
+                                    <div class="main-menu-info-colour-plans"> Featured Ad </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-main-menu-ads-plans">
+
+                            <div class="subheading-main-menu-ads-plans-third">Business plan</div>
+                            <div class="main-menu-compares-plans ">
+                                <div>
+                                    <div class="main-menu-info-ads-plans"> <img src="img/badges/005.png"
+                                            alt="Your Image" /> ₹ 24999 </div>
+                                    <div class="main-menu-info-ads-plans"> 50 Ads / year </div>
+                                    <div class="main-menu-info-colour-plans"> Featured Ad </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-main-menu-ads-plans">
+
+                            <div class="subheading-main-menu-ads-plans-fourth">Power User plan</div>
+                            <div class="main-menu-compares-plans ">
+                                <div>
+                                    <div class="main-menu-info-ads-plans"> <img src="img/badges/005.png"
+                                            alt="Your Image" /> ₹ 49999 </div>
+                                    <div class="main-menu-info-ads-plans"> Unlimited Ads / Year </div>
+                                    <div class="main-menu-info-colour-plans"> Featured Ad </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-user-container owl-carousel owl-loaded owl-drag m-t-10 m-b-15">
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/1x1/bm.svg" alt="Your Image">
+                        </div>
+                        <img src="img/profile-pics/011.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Anita Mishra
+                            </a>
+                        </div>
+                        <div class="designation">Founder & CEO</div>
+                        <div class="organisation">Lift Parts Online Pvt. Ltd.</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/4x3/ad.svg" alt="Your Image">
+                        </div>
+                        <img src="img/profile-pics/012.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Aniket Javalkar
+                            </a>
+                        </div>
+                        <div class="designation">Distrobor (India)</div>
+                        <div class="organisation">Lehner Lifttechnik Gmbh</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/4x3/at.svg" alt="Your Image">
+                        </div>
+                        <img src="img/profile-pics/013.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Sameera Rizvi
+                            </a>
+                        </div>
+                        <div class="designation">Graphics Designer</div>
+                        <div class="organisation">Freelancer</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/4x3/bd.svg" alt="Country Flag">
+                        </div>
+                        <img src="img/profile-pics/014.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Bimal Joshi
+                            </a>
+                        </div>
+                        <div class="designation">Proprietor</div>
+                        <div class="organisation">Universal Lift & Elevators</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/4x3/bi.svg" alt="Country Flag">
+                        </div>
+                        <img src="img/profile-pics/015.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Varun Rajput
+                            </a>
+                        </div>
+                        <div class="designation">Senior Technician</div>
+                        <div class="organisation">Otis Elevator Company</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/4x3/in.svg" alt="Country Flag">
+                        </div>
+                        <img src="img/profile-pics/016.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Poonam Kumari
+                            </a>
+                        </div>
+                        <div class="designation">Sernior Accountant</div>
+                        <div class="organisation">TK Elevator</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="card-user">
+                    <div class="photo">
+                        <div class="flag-icon">
+                            <img src="img/flags/4x3/pn.svg" alt="Country Flag">
+                        </div>
+                        <img src="img/profile-pics/017.jpg" />
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <a href="#0" title="Anita Mishra">
+                                Jeorge Furnandeze
+                            </a>
+                        </div>
+                        <div class="designation">Sole Proprietor</div>
+                        <div class="organisation">Lift Motors & Engineering</div>
+                        <div class="button-group">
+                            <button class="view-w-90">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Recent Users -->
+            <!-- Begin: Latest Products-->
+
+            <div class="grid-latest-products m-b-15">
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/011.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">Godrej 180 L 2 Star Advanced Capillary Technology, With Jumbo Vegetable Tray
+                            Direct Cool Single Door Refrigerator(RD EDGE 205B</div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/012.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            2710 X 2130 mm NIDO HYDRAULIC DOCK LEVELER:- ND-DL- 10, Mild
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/013.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            2 Post 10-15 m Car Lift Elevator, For Parking, Car Capacity: 3000kg
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default green">
+                    <div class="slider">
+                        <img src="img/dummy-pics/014.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Goods Lift Industrial Hydraulic Elevator, Max Persons: 13 Persons
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="like m-l-10" title="Featured Ad">
+                                <span class="m-l-2">
+                                    <img src="img/badges/005.png" />
+                                    Featured
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/015.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Chrome Forged U-Clamp 13mm with washer
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">910</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/016.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Industrial Goods Lift Elevator, Max Capacity: 6 Ton
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">13</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/017.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Metal Lift Spare Parts, For Industrial Premises
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">44</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/018.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">
+                            Hospital Stretcher Elevator, Max Persons: 6
+                        </div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">10k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/019.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">Motherboard - Dell Server R530 / R430, 2600 Series Proc</div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">1k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product -->
+                <div class="product-card-default">
+                    <div class="slider">
+                        <img src="img/dummy-pics/020.jpg" alt="Your Image">
+                    </div>
+                    <div class="content">
+                        <div class="m-t-3 text-bold">₹ 80,000 / Piece</div>
+                        <div class="title">Motherboard - Dell Server R530 / R430, 2600 Series Proc</div>
+                    </div>
+                    <div class="button-container d-flex justify-content-center">
+                        <a href="#0" class="button-blue-default" title="Enquiry">
+                            <img src="img/icons/cart-white.png" class="button-icon m-r-3" />
+                            <span>Add To Cart</span>
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <a href="#0" class="button-outline-grey" title="Show Number">
+                                Chat
+                            </a>
+                            <a href="#0" class="like m-l-10" title="Wishlist">
+                                <img src="img/icons/heart-grey.png" class="wihslist" />
+                                <span class="m-l-2">33k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Latest Products-->
+        </div>
+    </div>
+
+    <!-- End: Body -->
+    <!-- Begin: Footer Main Menu -->
+    <div class="container-fluid bg-white m-b-5">
+        <div class="gird-footer-menu">
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        About O2YO
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="About Us">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="What We Do">
+                                What We Do
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Why Choose Us">
+                                Why Choose Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Success Stories">
+                                Success Stories
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">Help & Support</strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Help & Support">
+                                Help & Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Feedback & Suggestions">
+                                Feedback & Suggestions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Complaints">
+                                Complaints
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Jobs & Career">
+                                Jobs & Career
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Contact Us">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        For Buyers
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Global Sourcing">
+                                Global Sourcing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Request For Quotation (RFQ)">
+                                Request For Quotation (RFQ)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Search Products & Suppliers">
+                                Search Products & Suppliers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Audio & Video Conferencing">
+                                Audio & Video Conferencing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Followup & Bookmarks">
+                                Followup & Bookmarks
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        For Suppliers
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Buy Leads">
+                                Buy Leads
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Sell Offers">
+                                Sell Offers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Product Promotion">
+                                Product Promotion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Website & SEO">
+                                Website & SEO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Website & SEO">
+                                Website & SEO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-b-5">
+        <div class="grid-footer-powered-by d-flex justify-content-between">
+            <div>
+                Copyright 2025 @ All Rights Reserved
+            </div>
+            <div class="float-end">
+                <a href="#0" class="link-default">
+                    Powered By I2OK
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End: Footer Main Menu -->
+    <!-- Begin: Mobile Sticky Footer Menu -->
+    <div class="footer-mobile-menu">
+        <div>
+            <a href="#0" title="Home">
+                <img src="img/icons/home-grey-i.svg" alt="Home" />
+                <span>HOME</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Pricing">
+                <img src="img/icons/pricing.svg" alt="Pricing" />
+                <span>MESSAGES</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="RFQ">
+                <img src="img/icons/plus.png" alt="RFQ" />
+                <span><strong>POST ADD</strong></span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Talk">
+                <img src="img/icons/chat.svg" alt="Talk" />
+                <span>ACCOUNT</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Help">
+                <img src="img/icons/arrow-up.svg" alt="Goto Top" id="goToTopButton" />
+                <span>TOP</span>
+            </a>
+        </div>
+    </div>
+    <!-- End: Mobile Sticky Footer Menu -->
+    <!-- Javascript -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- dropdown -->
+    <script type="text/javascript" src="vendors/jquery/code.jquery.com_jquery-1.10.2.min.js"></script>
+
+    <!-- owl carousel https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+
+        /* Begin: Goto Top */
+        const goToTopButton = document.getElementById('goToTopButton');
+
+        goToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        /* End: Goto Top */
+
+        /* Begin: Owl Carousel For User Cards */
+        $(document).ready(function () {
+            $('.card-user-container').owlCarousel({
+                loop: true,
+                stagePadding: 100,
+                margin: 8,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: true,  // Enable navigation
+                navText: ["<div class='owl-prev'>&#10094;</div>", "<div class='owl-next'>&#10095;</div>"], // Unicode arrows
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 6
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            })
+        });
+        /* End: Owl Carousel For Service Cards */
+
+        /* Begin: owl carousel for user cards */
+        $(document).ready(function () {
+            $('.category-menu').owlCarousel({
+                loop: true,
+                margin: 8,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: true,  // Enable navigation
+                navText: ["<div class='owl-prev'>&#10094;</div>", "<div class='owl-next'>&#10095;</div>"], // Unicode arrows
+                autoplay: false,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 6 },
+                    1000: { items: 12 }
+                }
+            });
+        });
+        /* End: owl carousel for user cards */
+        $(document).ready(function () {
+            $(".left-grid-carousel .owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: { items: 2 },
+                    600: { items: 2 },
+                    1000: { items: 4 }
+                }
+            });
+        });
+        /* Begin: Mega Menu */
+        function ToggleMenuFirst() {
+            var menu1 = document.getElementById('menu-first');
+            if (menu1.style.display === "none" || menu1.style.display === "") {
+                // Show menu
+                menu1.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu1.style.display = "none";
+            }
+        }
+
+        function ToggleMenuSecond() {
+            // Show menu-second
+            var menu2 = document.getElementById('menu-second');
+            menu2.style.display = "inline-block";
+
+            // Hide menu-fourth
+            var menu4 = document.getElementById('menu-fourth');
+            menu4.style.display = "none";
+
+            // Hide menu-third
+            var menu3 = document.getElementById('menu-third');
+            menu3.style.display = "none";
+        }
+
+        function ToggleMenuThird() {
+            var menu3 = document.getElementById('menu-third');
+            if (menu3.style.display === "none" || menu3.style.display === "") {
+                // Show menu
+                menu3.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu3.style.display = "none";
+            }
+        }
+
+        function ToggleMenuFourth() {
+            var menu4 = document.getElementById('menu-fourth');
+            if (menu4.style.display === "none" || menu4.style.display === "") {
+                // Show menu
+                menu4.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu4.style.display = "none";
+            }
+        }
+
+        function OpenFirstMenu() {
+            // open menu-first
+            var m1 = document.getElementById('menu-first');
+            m1.style.display = "inline-block";
+            // btn-toggle
+            var btnToggle = document.getElementById('btn-toggle');
+            btnToggle.style.display = "none";
+            // btn-toggle-close
+            var btnToggleClose = document.getElementById('btn-toggle-close');
+            btnToggleClose.style.display = "inline-block";
+        }
+
+        function CloseAllMenu() {
+            // get menu by id
+            var m1 = document.getElementById('menu-first');
+            var m2 = document.getElementById('menu-second');
+            var m3 = document.getElementById('menu-third');
+            var m4 = document.getElementById('menu-fourth');
+            // display:none
+            m1.style.display = "none";
+            m2.style.display = "none";
+            m3.style.display = "none";
+            m4.style.display = "none";
+            // btn-toggle-close
+            var btnToggleClose = document.getElementById('btn-toggle-close');
+            btnToggleClose.style.display = "none";
+            // btn-toggle
+            var btnToggle = document.getElementById('btn-toggle');
+            btnToggle.style.display = "inline-block";
+        }
+        /* End: Mega Menu */
+
+        /* begin: show hide filter */
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterDiv = document.querySelector(".form-search-filter");
+            const toggleBtn = document.querySelector(".toggle-filters");
+
+            // Initially hide the filter
+            filterDiv.classList.add("hidden");
+            toggleBtn.textContent = "Show Filters ↓";
+
+            toggleBtn.addEventListener("click", function () {
+                filterDiv.classList.toggle("hidden");
+
+                // Toggle text content
+                if (filterDiv.classList.contains("hidden")) {
+                    toggleBtn.textContent = "Show Filters ↓";
+                    toggleBtn.style.marginBottom = "10px"; // Add bottom margin when hidden
+                } else {
+                    toggleBtn.textContent = "Hide Filters ↑";
+                    toggleBtn.style.marginBottom = "0px"; // Remove margin when shown
+                }
+            });
+        });
+        /* end: show hide filter */
+    </script>
+</body>
+
+</html>

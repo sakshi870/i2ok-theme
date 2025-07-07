@@ -1,0 +1,69 @@
+﻿@import "../../../base/_containers.scss";
+@import "../../../base/_grids.scss";
+@import "../../../base/_common.scss";
+@import "../../../base/_form.scss";
+@import "../../../base/_menu.scss";
+@import "../../../base/_carousel.scss";
+@import "../../../base/_shimmer.scss";
+@import "../../../base/_wizard.scss";
+@import "../../../base/_account.scss";
+@import "../../../base/_plan.scss";
+@import "../../../components/menu/_mega-menu.scss";
+@import "../../../base/_ecommerce.scss";
+@import "../../../components/menu/_top-link-menu.scss";
+@import "../../../components/menu/_top-main-menu.scss";
+@import "../../../components/menu/_top-main-menu-minimal-ui.scss";
+@import "../../../components/menu/_keyword-scroller.scss";
+@import "../../../components/menu/_mobile-category-drill-down-menu.scss";
+@import "../../../components/menu/_mobile-drawer.scss";
+@import "../../../components/menu/_footer-mobile-menu.scss";
+@import "../../../components/menu/_top-mobile-menu.scss";
+@import "../../../components/menu/_top-menu-supplier.scss";
+@import "../../../components/menu/_menu-category-side-panel.scss";
+@import "../../../components/menu/_admin-menu.scss";
+@import "../../../components/_bread-crumbs.scss";
+@import "../../../components/_cards.scss";
+@import "../../../base/_helpers.scss";
+@import "../../../base/_buttons.scss";
+@import "../../../abstracts/_media-query.scss";
+@import "../../../components/menu/_search-bar.scss";
+@import "../../../components/tables/_table-user.scss";
+@import "../../../components/tables/_table-user-details.scss";
+@import "../../../components/tables/_table-product.scss";
+@import "../../../components/widgets/widget-dashboard.scss";
+@import "../../../components/widgets/_widget-common.scss";
+@import "../../../components/external/_owl-carousel-customization.scss";
+
+body {
+    background-color: $c-body-bg-1;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+/* begin: remove horizontal scrollbar from body */
+body, html {
+    overflow-x: hidden;
+}
+/* end: remove horizontal scrollbar from body */
+
+/* Begin: Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $c-grey-5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #818181;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #707070;
+}
+/* End: Custom Scrollbar */

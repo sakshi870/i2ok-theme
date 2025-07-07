@@ -1,0 +1,593 @@
+﻿@import "../abstracts/_colors.scss";
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/_links.scss";
+@import "../base/_fonts.scss";
+
+.heading-1-border-top {
+    font-size: 18px;
+    font-family: "Itim",cursive;
+    height: 35px;
+    padding-top:10px;
+    border-radius: 5px;
+    border-top: 1px solid #f2f3f5;
+}
+
+.product-slider-1 {
+
+    .thumbnail-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Two columns for small devices */
+        gap: 5px;
+
+        .thumbnail {
+            border-radius: 5px;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+    /* Styles for large devices */
+    @media (min-width: 768px) {
+        .thumbnail-holder {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.product-details {
+    line-height: 20px;
+
+    .price {
+        font-size: 28px;
+    }
+
+    .note {
+        font-size: 14px;
+        color: $c-grey-12;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .shop-name {
+        font-size: 15px;
+        font-weight: 420;
+
+        img {
+            width: auto;
+            height: 13px;
+            margin-top: -5px;
+            margin-right: 5px;
+        }
+    }
+
+    .btn-add-to-cart {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        color: $c-white;
+        background-color: $c-blue-default;
+        margin-bottom: 15px;
+    }
+
+    .section-heading {
+        font-size: 18px;
+        font-family: "Itim",cursive;
+    }
+
+    .feature {
+        font-size: 16px;
+
+        img {
+            width: auto;
+            height: 15px;
+            margin-top: -5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+/* Begin: grid-product-1-7 */
+.grid-product-1-7 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+@media (max-width: 1500px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1.5fr 6.5fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 810px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 688px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-product-1-7 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+/* End: grid-product-1-7 */
+
+/* Begin: sidebar-filter-1 */
+.sidebar-filter-1 {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Sticky at the top */
+    left: 0; /* Align to the left */
+    padding: 10px;
+    font-size: 14px;
+    color: #212529;
+    background-color: #fff; /* Replace with $c-white if it's defined in your SCSS */
+    border-bottom: 1px solid #ddd; /* Replace with $c-grey-2 if it's defined in your SCSS */
+    height: 500px; /* Ensure height is based on content */
+    z-index: 100; /* Ensure it's above other content */
+
+    .heading-grey-border {
+        border-bottom: 1px solid $c-grey-1;
+        padding-bottom: 10px;
+    }
+
+    button {
+        font-size: 12px !important;
+        padding: 0px 10px 0px 10px !important;
+        border: none !important;
+    }
+
+    #close-btn {
+        float: right !important;
+    }
+
+    input, select {
+        width: 100%;
+        height: 25px !important;
+        padding-left: 5px !important;
+        border: 1px solid $c-grey-4 !important;
+    }
+
+    input[type=checkbox] {
+        height: 11px !important;
+        width: auto !important;
+        margin-right: 5px !important;
+    }
+
+    input[type=file] {
+        height: auto !important;
+        border: 1px solid $c-grey-4 !important;
+        width: 100% !important;
+        margin-right: 5px !important;
+        background: $c-white !important;
+        padding: 7px !important;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 7px;
+        border: 1px solid $c-grey-4 !important;
+    }
+
+    .required-field {
+        color: $c-red-6;
+        margin-left: 3px;
+    }
+}
+/* End: sidebar-filter-1 */
+
+/* Begin: product-grid-5 */
+.product-grid-5 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
+    .product-card-1 {
+        width: 100%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        position: relative; /* For positioning the buttons inside the slider */
+
+        @media (max-width: 768px) {
+            padding: 0px !important;
+            border-radius: 0px;
+            margin-bottom: 0px;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+
+            .slider-item {
+                flex: 0 0 100%; /* Show one item at a time */
+                position: relative;
+                padding-bottom: 100%;
+                background: #f0f0f0; /* Optional: background color */
+                overflow: hidden;
+                transition: opacity 0.9s ease; /* Smooth fade transition */
+                border-radius: 5px;
+
+                @media (max-width: 768px) {
+                    border-radius: 0px;
+                }
+            }
+
+            .slider-item img,
+            .slider-item video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Adjusts the content to cover the container */
+                transition: opacity 0.9s ease; /* Smooth transition for opacity changes */
+            }
+
+            .play-button {
+                position: absolute;
+                bottom: 10px; /* Distance from bottom */
+                right: 10px; /* Distance from right */
+                width: 20px; /* Width of the button */
+                height: 20px; /* Height of the button */
+                display: flex;
+                cursor: pointer;
+                z-index: 10; /* Ensure button is above other content */
+            }
+
+            .slider-item:hover .play-button {
+                opacity: 0; /* Hide the button on hover */
+            }
+
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+                border: none;
+                padding: 8px; /* Padding inside the button */
+                cursor: pointer;
+                z-index: 10; /* Ensure buttons are above slider items */
+                font-size: 12px; /* Adjust arrow size if needed */
+                line-height: 1; /* Prevent line height issues */
+            }
+
+            button.prev {
+                left: 0px; /* Position left arrow with padding from the left edge */
+            }
+
+            button.next {
+                right: 0px; /* Position right arrow with padding from the right edge */
+            }
+
+            button:focus {
+                outline: none; /* Remove default focus outline */
+            }
+        }
+
+        .description {
+            font-size: 0.9rem;
+            //font-size:14px;
+            margin-top: 3px;
+            padding: 0px 3px 0px 3px;
+            color: $c-black-1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; // Limits text to 2 lines
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+
+
+            @media (max-width: 768px) {
+                //margin-top: 2px;
+                font-size: 0.7rem;
+            }
+
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-top: 5px;
+
+                    @media (max-width: 768px) {
+                        margin-top: 2px !important;
+                        line-height: 15px;
+                    }
+
+                    img {
+                        width: auto;
+                        height: 15px;
+                        margin-right: 5px;
+
+
+                        @media (max-width: 768px) {
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-top: 1px solid $c-grey-2;
+            margin: 10px -10px 10px -10px;
+
+
+            @media (max-width: 768px) {
+                border-top: 1px solid $c-grey-2;
+                margin: 6px -10px 6px -10px;
+            }
+        }
+
+        .footer {
+
+            @media (max-width: 768px) {
+                padding: 0px 4px 0px 4px !important;
+            }
+
+            a {
+                img {
+                    height: 18px;
+                    width: 18px;
+                    margin-top: -3px;
+                }
+            }
+
+            button {
+                padding: 1px 10px 1px 10px;
+
+                img {
+                    height: 15px;
+                    width: auto;
+                    margin-top: -2px;
+
+                    @media (max-width: 768px) {
+                        margin-top: -1px;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                border-radius: 0px;
+            }
+        }
+
+        .info {
+            margin-top: 3px;
+            font-size: 15px;
+            color: $c-black-2;
+            text-decoration: none;
+
+            @media (max-width: 768px) {
+                margin-top: 1px;
+            }
+
+
+
+            :hover {
+                color: $c-black-1 !important;
+            }
+
+            img {
+                opacity: 0.6;
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            img:hover {
+                opacity: 1;
+            }
+        }
+
+        .condition {
+            font-size: 15px;
+            margin-top: 2px;
+            color: $c-black-2;
+            text-decoration: none;
+
+            @media (max-width: 768px) {
+                margin-top: 1px;
+                //margin-top: 3px;
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+            img {
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
+    }
+}
+
+    .product-card-1.text-center {
+        text-align: center;
+    }
+    // begin: colors
+.product-card-1.green {
+    border: 2px solid $c-green-6 !important;
+    border-radius: 5px !important;
+
+
+    @media (max-width: 768px) {
+        border: 2px solid $c-green-6 !important;
+        border-radius: 0px !important;
+    }
+
+
+
+    .like {
+        text-decoration: none;
+        color: $c-green-2;
+
+        img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+
+    .button-blue-default {
+        background-color: $c-green-1 !important;
+    }
+
+    .button-blue-default:hover {
+        background-color: #1a9936 !important;
+    }
+}
+
+    .product-card-1.red {
+        border: 2px solid $c-red-13 !important;
+        border-radius: 5px !important;
+
+        .like {
+            text-decoration: none;
+            color: $c-red-13;
+
+            img {
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+
+        .button-blue-default {
+            background-color: $c-red-13 !important;
+        }
+
+        .button-blue-default:hover {
+            background-color: #d60909 !important;
+        }
+    }
+    // end: colors
+
+    @media (max-width: 1080px) {
+        .product-grid-5 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Create 5 equal-width columns */
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .product-grid-5 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Create 5 equal-width columns */
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 810px) {
+        .product-grid-5 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Create 5 equal-width columns */
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 688px) {
+        .product-grid-5 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Create 5 equal-width columns */
+            grid-template-rows: auto;
+            grid-gap: 2px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .product-grid-5 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Create 5 equal-width columns */
+            grid-template-rows: auto;
+            grid-gap: 2px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .product-grid-5 {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Create 5 equal-width columns */
+            grid-template-rows: auto;
+            grid-gap: 2px;
+        }
+    }
+    /* End: product-grid-5 */

@@ -1,0 +1,96 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+// Begin: Display and hide toggle button by id
+#btn-toggle {
+    display:inline-block;
+}
+
+#btn-toggle-close {
+    display: none;
+}
+// End: Display and hide toggle button by id
+
+// Begin: Mega Menu
+.mega-menu-container {
+    max-width: 1450px;
+    margin: auto;
+    position: relative; /* Ensures .mega-menu positions relative to this */
+    z-index: 10000;
+
+    .mega-menu {
+        position: absolute;
+        left: 0; /* Aligns to the left of .mega-menu-container */
+        top: 100%; /* Makes it appear below the category icon */
+        font-size: 0;
+
+        .menu {
+            font-size: 14px;
+            display: none;
+            width: 260px !important;
+            height: 470px !important;
+            max-height: 470px; /* Ensures scrolling happens when content exceeds this height */
+            overflow-y: auto;
+            background-color: $c-white;
+            padding: 5px 0px 5px 0px;
+            border-left: 1px solid $c-grey-5;
+            border-right: 1px solid $c-grey-5;
+            border-bottom: 1px solid $c-grey-5;
+            /* cat-link */
+            .cat-link {
+                text-decoration: none;
+                color: $c-black-4;
+                display: flex; /* Enables flexbox */
+                align-items: center; /* Vertically centers text & image */
+                justify-content: space-between; /* Text on left, image on right */
+                padding: 3px 10px 3px 15px; /* Adjust padding for better spacing */
+
+                img {
+                    width: 10px;
+                    height: auto;
+                }
+            }
+
+            .cat-link:hover {
+                background-color: $c-black-5;
+            }
+
+            .active-link {
+                background-color: $c-black-5;
+            }
+            /* footer-link */
+            .footer-link {
+                position: absolute;
+                bottom: 0;
+                width: 260px !important;
+                text-decoration: none;
+                font-weight: 500;
+                color: $c-black-4;
+                background-color: $c-grey-36;
+                display: flex; /* Enables flexbox */
+                align-items: center; /* Vertically centers text & image */
+                justify-content: space-between; /* Text on left, image on right */
+                padding: 5px 10px 5px 15px; /* Adjust padding for better spacing */
+
+                img {
+                    width: 15px;
+                    height: auto;
+                }
+            }
+
+            .footer-link:hover {
+                background-color: $c-grey-2;
+            }
+
+            .loading-data {
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding-top: 100px;
+            }
+        }
+    }
+}
+// End: Mega Menu

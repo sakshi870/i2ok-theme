@@ -1,0 +1,54 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.footer-mobile-menu {
+    display: none;
+    background-color: $c-white;
+    padding: 5px 20px 5px 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-left: -10px !important;
+    border-top: 1px solid $c-grey-40;
+    z-index: 10000;
+}
+
+.footer-mobile-menu a {
+    text-decoration: none;
+    color: #585858;
+    font-size:12px;
+}
+
+.footer-mobile-menu a:hover {
+    text-decoration: none;
+    color: #014FE5;
+    font-size: 12px;
+}
+
+.footer-mobile-menu img {
+    height:20px;
+}
+
+.footer-mobile-menu img::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.footer-mobile-menu span {
+    display: block;
+    color:$c-black-6;
+    font-weight: bold;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1024px) {
+    .footer-mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -10px !important;
+    }
+}

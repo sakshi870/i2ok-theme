@@ -1,0 +1,45 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.top-link-menu {
+    background-color: $c-white;
+    padding: 3px;
+    border-bottom: 1px solid $c-grey-6;
+
+    .link-text {
+        font-size: 15px;
+        color: $c-blue-default-dark;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+            color: $c-blue-default;
+            transform: scale(1.05);
+        }
+    }
+
+    .link-icon {
+        color: $c-black-1;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+            color: $c-black-1;
+            filter: brightness(1.5);
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        img {
+            height: 20px;
+        }
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1024px) {
+    .top-link-menu {
+        display: none;
+    }
+}

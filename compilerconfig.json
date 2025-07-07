@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "scss/themes/sso/auth/authentication.css",
+    "inputFile": "scss/themes/sso/auth/authentication.scss"
+  },
+  {
+    "outputFile": "scss/themes/frontend/listing/_listing.css",
+    "inputFile": "scss/themes/frontend/listing/_listing.scss"
+  }
+]

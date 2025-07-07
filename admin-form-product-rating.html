@@ -1,0 +1,908 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Basic Meta Info -->
+    <title>Home</title>
+    <meta name="keywords" content="">
+    <meta name="author" content="Bhupesh Varshney" />
+    <meta name="description" content="">
+
+    <!-- OpenGraph Meta -->
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:url" content="" />
+
+    <!-- Meta For Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@bhupeshimself">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image" content="logo.png">
+    <meta name="twitter:site" content="@bhupeshimself">
+    <meta name="twitter:description" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+    <!-- Manifest For PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheets -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/themes/frontend/listing/_listing.min.css">
+
+    <!-- Dropdown -->
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns.css">
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns-skin-discrete.css">
+
+    <!-- Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- Begin: Admin Side Icon Menu -->
+    <div class="admin-side-icon-menu">
+        <div class="icon-button" id="chatRoomLink">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/call.svg" alt="SEO Text" />
+                <span>Chat Rooms</span>
+            </a>
+        </div>
+        <div class="icon-button" id="dashboardLink">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/home.svg" alt="SEO Text" />
+                <span>Dashboard</span>
+            </a>
+        </div>
+        <div class="icon-button" id="usersLink">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/search.svg" alt="SEO Text" />
+                <span>Users</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/verified.svg" alt="SEO Text" />
+                <span>CRM</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/cart.svg" alt="SEO Text" />
+                <span>Catalog</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/rocket.svg" alt="SEO Text" />
+                <span>CMS</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/link.svg" alt="SEO Text" />
+                <span>Network</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/box.svg" alt="SEO Text" />
+                <span>RFQ</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/dollar.svg" alt="SEO Text" />
+                <span>Billing</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/bookmark.svg" alt="SEO Text" />
+                <span>Reviews</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/cloud.svg" alt="SEO Text" />
+                <span>Cloud</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/puzzle.svg" alt="SEO Text" />
+                <span>Integrations</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/cloud.svg" alt="SEO Text" />
+                <span>Cloud</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/cog.svg" alt="SEO Text" />
+                <span>Settings</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <img src="img/icons-admin/help.svg" alt="SEO Text" />
+                <span>Help</span>
+            </a>
+        </div>
+        <div class="icon-button">
+            <a href="#0" title="O2YO">
+                <span>v1.1.5</span>
+            </a>
+        </div>
+    </div>
+    <!-- End: Admin Side Icon Menu -->
+    <!-- Begin: Top Mobile Menu-->
+    <div class="top-mobile-menu">
+        <!-- Logo -->
+        <div>
+            <a href="#0" title="O2YO" id="logo" class="m-l-5">
+                <img src="img/logo.svg" alt="O2YO" />
+            </a>
+        </div>
+        <!-- Search -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Search" onclick="ToggleAdminMobileSearchBar()">
+            <img src="img/icons/search.png" class="img-20" title="Search" />
+        </a>
+        <!-- Notification -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Notification">
+            <img src="img/icons/bell.png" class="img-20" title="Search" />
+        </a>
+        <!-- Begin: Switch App -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Switch App" id="open-drawer">
+            <img src="img/buttons/btn-group-button.png" class="img-20" title="Switch App" />
+        </a>
+        <!-- Switch App Mobile Drawer -->
+        <div class="mobile-drawer">
+            <ul>
+                <li class="icon-holder">
+                    <a href="">
+                        <strong>APPS</strong>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/talk.png" alt="Talk Room" />
+                        <span>Talk</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/crm.png" alt="CRM" />
+                        <span>CRM</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/cart.png" alt="Shop" />
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/marketplace.png" alt="Marketplace" />
+                        <span>Marketplace</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/professional.png" alt="Professionals" />
+                        <span>Professionals</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/job.png" alt="Jobs" />
+                        <span>Jobs</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/courses.png" alt="Courses" />
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/apps.png" alt="Apps" />
+                        <span>Apps</span>
+                    </a>
+                </li>
+                <li class="icon-holder">
+                    <a href="">
+                        <img src="img/icons/startup.png" alt="Startup" />
+                        <span>Statup</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End: Switch App -->
+        <!-- User Profile -->
+        <div class="d-flex">
+            <div class="dropdown me-1">
+                <img src="img/icons/avtar.svg" title="Profile" class="img-20 m-l-10 m-t-3 dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Categories -->
+        <div>
+            <a href="#0" title="Categories" onclick="ToggleAdminMobileSideMenu()">
+                <img src="img/icons/btn-toggle.png" alt="Categories" />
+            </a>
+        </div>
+    </div>
+    <div class="top-mobile-search">
+        <input type="text" class="search-input-mobile" placeholder="Search here..." />
+        <a href="#0" class="link-icon m-l-10">
+            <img src="img/buttons/btn-search.svg" title="Search" />
+        </a>
+    </div>
+    <!-- End: Top Mobile Menu -->
+
+    <div class="admin-main-body" style="margin-bottom:25px !important;">
+        <!-- Begin: Top Desktop Menu + Breadcrumb -->
+        <div class="container-admin d-flex justify-content-between" id="admin-top-menu-desktop">
+            <!-- Begin: Breadcrumb Desktop -->
+            <div class="bread-crumb-ii">
+                <a href="#0" title="SEO Text">
+                    <img src="img/icons/home-grey-i.svg" alt="SEO Text" />
+                </a>
+                <span class="arrow right"></span>
+                <a href="#0" title="SEO Text">Chat Rooms</a>
+                <span class="arrow right"></span>
+                <a href="#0" title="SEO Text">English Speaking</a>
+                <span class="arrow right"></span>
+                <span>Basic English</span>
+            </div>
+            <!-- End: Breadcrumb Desktop -->
+            <div class="d-flex justify-content-between">
+                <!-- Begin: App Hamburger Menu -->
+                <div class="dropdowns m-lr-10" id="hamburger">
+                    <a class="toggleMenu" href="#">Features</a>
+                    <ul class="nav" id="nav-bar">
+                        <li class="test">
+                            <a href="#">
+                                <img src="img/buttons/btn-group-button.png" alt="Apps" />
+                            </a>
+                            <ul>
+                                <li>
+                                    <div class="hamberger-menu" style="margin-top:-10px;">
+                                        <div class="item-container">
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/talk.png" alt="Talk Room" />
+                                                    <span>Talk Room</span>
+                                                </a>
+                                            </div>
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/crm.png" alt="CRM" />
+                                                    <span>CRM</span>
+                                                </a>
+                                            </div>
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/cart.png" alt="Shop" />
+                                                    <span>Shop</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item-container m-t-20">
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/marketplace.png" alt="Marketplace" />
+                                                    <span>Marketplace</span>
+                                                </a>
+                                            </div>
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/professional.png" alt="Professionals" />
+                                                    <span>Professionals</span>
+                                                </a>
+                                            </div>
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/job.png" alt="Jobs" />
+                                                    <span>Jobs</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item-container m-t-20">
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/courses.png" alt="Courses" />
+                                                    <span>Courses</span>
+                                                </a>
+                                            </div>
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/apps.png" alt="Apps" />
+                                                    <span>Apps</span>
+                                                </a>
+                                            </div>
+                                            <div class="icon-holder">
+                                                <a href="">
+                                                    <img src="img/icons/startup.png" alt="Startup" />
+                                                    <span>Statup</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End: pp Hamburger Menu -->
+                <!-- Country -->
+                <a href="#0" class="admin-link-icon m-lr-10 m-t-5">
+                    <img src="img/flags/circle/in.png" title="Country" />
+                    <span class="m-l-5">IND</span>
+                </a>
+                <!-- Currency -->
+                <a href="#0" class="admin-link-icon m-lr-10 m-t-5">
+                    <span class="m-l-5">&#x20B9; INR</span>
+                </a>
+                <!-- Right -->
+                <a href="#0" class="admin-link-icon m-lr-10 m-t-3">
+                    <img src="img/icons/chat.svg" title="Chat" />
+                </a>
+                <a href="#0" class="admin-link-icon m-lr-10 m-t-3">
+                    <img src="img/icons/help.svg" title="Help" />
+                </a>
+
+                <!-- Begin: Avtar and Login -->
+
+                <div class="dropdown me-1">
+                    <img src="img/icons/avtar.svg" title="Profile" class="m-l-10 m-t-3 dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                    <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <!-- End: Avtar and Login -->
+            </div>
+        </div>
+        <!-- End: Top Desktop Menu -->
+        <!-- Begin: Mobile Breadcrumb -->
+        <div class="container-admin d-flex justify-content-between" id="admin-top-menu-mobile">
+            <div class="bread-crumb-ii">
+                <a href="#0" title="SEO Text">
+                    <img src="img/icons/home-grey-i.svg" alt="SEO Text" />
+                </a>
+                <span class="arrow right"></span>
+                <a href="#0" title="SEO Text">Chat Rooms</a>
+                <span class="arrow right"></span>
+                <a href="#0" title="SEO Text">English Speaking</a>
+            </div>
+        </div>
+        <!-- End: Mobile Breadcrumb -->
+        <!-- Begin: Main Body -->
+        <div class="p-2">
+            <div class="row g-3">
+                <!-- Begin: Side Menu -->
+                <div class="col-sm-12 col-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="verticle-menu-1">
+                        <div class="title">
+                            Add Product
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="admin-form-product-basic.html">
+                                    <img src="img\icons-product\basic-1.svg" />
+                                    <span>Basic</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-seo.html">
+                                    <img src="img\icons-product\search-3.svg" />
+                                    <span>SEO</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-pricing.html">
+                                    <img src="img\icons-product\money-1.svg" />
+                                    <span>Pricing</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-stock.html">
+                                    <img src="img\icons-product\stock.svg" />
+                                    <span>Stock</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-category.html">
+                                    <img src="img\icons-product\category.svg" />
+                                    <span>Categories</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-shipping.html">
+                                    <img src="img\icons-product\delivery.svg" />
+                                    <span>Shipping</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-digital.html">
+                                    <img src="img\icons-product\digital-product.svg" />
+                                    <span>Digital</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-media.html">
+                                    <img src="img\icons-product\media.svg" />
+                                    <span>Media</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-download.html">
+                                    <img src="img\icons-product\download.svg" />
+                                    <span>Downloads</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-policy.html">
+                                    <img src="img\icons-product\policy.svg" />
+                                    <span>Policies</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-related-product.html">
+                                    <img src="img\icons-product\related-product.svg" />
+                                    <span>Related Products</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-tags.html">
+                                    <img src="img\icons-product\tag.svg" />
+                                    <span>Tags</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="admin-form-product-rating.html">
+                                    <img src="img\icons-product\rating.svg" />
+                                    <span>Reviews & Ratings</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-approval.html">
+                                    <img src="img\icons-product\basic-1.svg" />
+                                    <span>Approval</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-form-product-report.html">
+                                    <img src="img\icons-product\basic-1.svg" />
+                                    <span>Report</span>
+                                    <img src="img\icons-color\check-grey.png" class="status" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End: Side Menu -->
+                <!-- Begin: Company -->
+                <div class="col-sm-12 col-12 col-md-6 col-lg-7 col-xl-5">
+                    <div class="form-1">
+                        <!-- Title -->
+                        <div class="row title">
+                            <div class="col-md-12">
+                                Reviews & Ratings
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Review & Rating -->
+                            <div class="col-md-12 m-t-7">
+                                <!-- Review -->
+                                <div class="review-rating">
+                                    <div class="profile-container">
+                                        <img src="img/profile-pics/008.jpg" class="img-70-circle" />
+                                        <p class="m-t-5">
+                                            <span>Shafi Mohammad Shaikh</span>
+                                            <br />
+                                            <span>10th January, 2024</span>
+                                        </p>
+                                        <div class="star-rating">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star half"></div>
+                                            <div class="star empty"></div>
+                                        </div>
+                                        <div class="review-comment">
+                                            My first and only mala ordered on O2YO, and I'm beyond delighted! I requested a custom mala based on two stones I was called to invite together in this kind of creation. The fund and genuine joy I invite together in this kind of creation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="review-rating">
+                                    <div class="profile-container">
+                                        <img src="img/profile-pics/008.jpg" class="img-70-circle" />
+                                        <p class="m-t-5">
+                                            <span>Shafi Mohammad Shaikh</span>
+                                            <br />
+                                            <span>10th January, 2024</span>
+                                        </p>
+                                        <div class="star-rating">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star empty"></div>
+                                            <div class="star empty"></div>
+                                            <div class="star empty"></div>
+                                        </div>
+                                        <div class="review-comment">
+                                            My first and only mala ordered on O2YO, and I'm beyond delighted! I requested a custom mala based on two stones I was called to invite together in this kind of creation. The fund and genuine joy I invite together in this kind of creation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="review-rating">
+                                    <div class="profile-container">
+                                        <img src="img/profile-pics/008.jpg" class="img-70-circle" />
+                                        <p class="m-t-5">
+                                            <span>Shafi Mohammad Shaikh</span>
+                                            <br />
+                                            <span>10th January, 2024</span>
+                                        </p>
+                                        <div class="star-rating">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star half"></div>
+                                            <div class="star empty"></div>
+                                        </div>
+                                        <div class="review-comment">
+                                            My first and only mala ordered on O2YO, and I'm beyond delighted! I requested a custom mala based on two stones I was called to invite together in this kind of creation. The fund and genuine joy I invite together in this kind of creation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="review-rating">
+                                    <div class="profile-container">
+                                        <img src="img/profile-pics/008.jpg" class="img-70-circle" />
+                                        <p class="m-t-5">
+                                            <span>Shafi Mohammad Shaikh</span>
+                                            <br />
+                                            <span>10th January, 2024</span>
+                                        </p>
+                                        <div class="star-rating">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star half"></div>
+                                            <div class="star empty"></div>
+                                        </div>
+                                        <div class="review-comment">
+                                            My first and only mala ordered on O2YO, and I'm beyond delighted! I requested a custom mala based on two stones I was called to invite together in this kind of creation. The fund and genuine joy I invite together in this kind of creation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="review-rating">
+                                    <div class="profile-container">
+                                        <img src="img/profile-pics/008.jpg" class="img-70-circle" />
+                                        <p class="m-t-5">
+                                            <span>Shafi Mohammad Shaikh</span>
+                                            <br />
+                                            <span>10th January, 2024</span>
+                                        </p>
+                                        <div class="star-rating">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star half"></div>
+                                            <div class="star empty"></div>
+                                        </div>
+                                        <div class="review-comment">
+                                            My first and only mala ordered on O2YO, and I'm beyond delighted! I requested a custom mala based on two stones I was called to invite together in this kind of creation. The fund and genuine joy I invite together in this kind of creation.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="review-rating">
+                                    <div class="profile-container">
+                                        <img src="img/profile-pics/008.jpg" class="img-70-circle" />
+                                        <p class="m-t-5">
+                                            <span>Shafi Mohammad Shaikh</span>
+                                            <br />
+                                            <span>10th January, 2024</span>
+                                        </p>
+                                        <div class="star-rating">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star half"></div>
+                                            <div class="star empty"></div>
+                                        </div>
+                                        <div class="review-comment">
+                                            My first and only mala ordered on O2YO, and I'm beyond delighted! I requested a custom mala based on two stones I was called to invite together in this kind of creation. The fund and genuine joy I invite together in this kind of creation.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Company -->
+            </div>
+        </div>
+        <!-- End: Main Body -->
+    </div>
+    <!-- End: grid-2-column ->
+    <!-- Begin: Mobile Sticky Footer Menu -->
+    <div class="footer-mobile-menu">
+        <div>
+            <a href="#0" title="Home">
+                <img src="img/icons/cart.svg" alt="CRM" />
+                <span>Products</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Talk">
+                <img src="img/icons/chat.svg" alt="Talk" />
+                <span>Messages</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="CRM">
+                <img src="img/icons/pricing.svg" alt="CRM" />
+                <span>CRM</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Pricing">
+                <img src="img/icons/purchase.svg" alt="Buy Offer" />
+                <span>Buy Offer</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Help">
+                <img src="img/icons/arrow-up.svg" alt="Goto Top" id="goToTopButton" />
+                <span>Top</span>
+            </a>
+        </div>
+    </div>
+    <!-- End: Mobile Sticky Footer Menu -->
+    <!-- Begin: Verticle Sub Menu -->
+    <div class="verticle-menu" id="chatRoomMenu">
+        <div class="menu-heading">
+            Chat Room
+        </div>
+        <ul>
+            <li><a href="#0" title="Text">Language Learning</a></li>
+            <li><a href="#0" title="Text">Entrepreneurship</a></li>
+            <li><a href="#0" title="Text">Business Ideas</a></li>
+            <li><a href="#0" title="Text">Programming & Development</a></li>
+            <li><a href="#0" title="Text">Movies & Music</a></li>
+            <li><a href="#0" title="Text">Gaming</a></li>
+            <li><a href="#0" title="Text">Books & Novels</a></li>
+            <li><a href="#0" title="Text">Tours & Travels</a></li>
+            <li><a href="#0" title="Text">Health & Fitness</a></li>
+            <li><a href="#0" title="Text">Art & Creativity</a></li>
+            <li><a href="#0" title="Text">Cooking & Receipe</a></li>
+            <li><a href="#0" title="Text">Prenting</a></li>
+            <li><a href="#0" title="Text">Career Development</a></li>
+            <li><a href="#0" title="Text">Science and Technology</a></li>
+            <li><a href="#0" title="Text">Environment</a></li>
+            <li><a href="#0" title="Text">Mental Health</a></li>
+            <li><a href="#0" title="Text">Sports</a></li>
+            <li><a href="#0" title="Text">Pet Lovers</a></li>
+            <li><a href="#0" title="Text">Hobbyists </a></li>
+        </ul>
+    </div>
+    <div class="verticle-menu" id="dashboardMenu">
+        <div class="menu-heading">
+            Dashboard
+        </div>
+        <ul>
+            <li><a href="#0" title="Text">Language Learning</a></li>
+            <li><a href="#0" title="Text">Entrepreneurship</a></li>
+            <li><a href="#0" title="Text">Business Ideas</a></li>
+            <li><a href="#0" title="Text">Programming & Development</a></li>
+            <li><a href="#0" title="Text">Movies & Music</a></li>
+            <li><a href="#0" title="Text">Gaming</a></li>
+            <li><a href="#0" title="Text">Books & Novels</a></li>
+            <li><a href="#0" title="Text">Tours & Travels</a></li>
+            <li><a href="#0" title="Text">Health & Fitness</a></li>
+            <li><a href="#0" title="Text">Art & Creativity</a></li>
+            <li><a href="#0" title="Text">Cooking & Receipe</a></li>
+            <li><a href="#0" title="Text">Prenting</a></li>
+            <li><a href="#0" title="Text">Career Development</a></li>
+            <li><a href="#0" title="Text">Science and Technology</a></li>
+            <li><a href="#0" title="Text">Environment</a></li>
+            <li><a href="#0" title="Text">Mental Health</a></li>
+            <li><a href="#0" title="Text">Sports</a></li>
+            <li><a href="#0" title="Text">Pet Lovers</a></li>
+            <li><a href="#0" title="Text">Hobbyists </a></li>
+        </ul>
+    </div>
+    <div class="verticle-menu" id="userMenu">
+        <div class="menu-heading">
+            User's
+        </div>
+        <ul>
+            <li><a href="#0" title="Text">Language Learning</a></li>
+            <li><a href="#0" title="Text">Entrepreneurship</a></li>
+            <li><a href="#0" title="Text">Business Ideas</a></li>
+            <li><a href="#0" title="Text">Programming & Development</a></li>
+            <li><a href="#0" title="Text">Movies & Music</a></li>
+            <li><a href="#0" title="Text">Gaming</a></li>
+            <li><a href="#0" title="Text">Books & Novels</a></li>
+            <li><a href="#0" title="Text">Tours & Travels</a></li>
+            <li><a href="#0" title="Text">Health & Fitness</a></li>
+            <li><a href="#0" title="Text">Art & Creativity</a></li>
+            <li><a href="#0" title="Text">Cooking & Receipe</a></li>
+            <li><a href="#0" title="Text">Prenting</a></li>
+            <li><a href="#0" title="Text">Career Development</a></li>
+            <li><a href="#0" title="Text">Science and Technology</a></li>
+            <li><a href="#0" title="Text">Environment</a></li>
+            <li><a href="#0" title="Text">Mental Health</a></li>
+            <li><a href="#0" title="Text">Sports</a></li>
+            <li><a href="#0" title="Text">Pet Lovers</a></li>
+            <li><a href="#0" title="Text">Hobbyists </a></li>
+        </ul>
+    </div>
+    <!-- End: Verticle Sub Menu -->
+    <!-- End: Content -->
+    </div>
+    <!-- Javascript -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dropdown -->
+    <script type="text/javascript" src="vendors/jquery/code.jquery.com_jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="vendors/dropdown/dropdowns.js"></script>
+    <script type="text/javascript" src="js/admin-verticle-menu.js"></script>
+    <script type="text/javascript" src="js/mobile-drill-down-menu.js"></script>
+
+    <!-- Begin: Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        /* Begin: Initialize Dropdown */
+        $(".dropdowns").dropdowns();
+        /* End: Initialize Dropdown */
+
+        /* Begin: Goto Top */
+        const goToTopButton = document.getElementById('goToTopButton');
+
+        goToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        /* End: Goto Top */
+
+        /* Begin: Owl Carousel */
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                stagePadding: 100,
+                margin: 10,
+                autoWidth: true,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        });
+        /* End: Owl Carousel */
+
+        /* Begin: Mobile Drawer */
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileDrawer = document.querySelector('.mobile-drawer');
+            const openDrawerButton = document.querySelector('#open-drawer');
+
+            openDrawerButton.addEventListener('click', function () {
+                // Toggle the class to show/hide the drawer
+                mobileDrawer.classList.toggle('open');
+            });
+        });
+
+        /* Begin: Toggle Admin Mobile Side Menu */
+        function ToggleAdminMobileSideMenu() {
+            var adminSideIconMenu = document.querySelector('.admin-side-icon-menu');
+            var mobileDrawer = document.querySelector('.mobile-drawer');
+            var verticleMenu = document.querySelector('.verticle-menu');
+
+            mobileDrawer.classList.remove('open');
+
+            // Toggle the display of the menu
+            if (adminSideIconMenu.style.display === 'none' || adminSideIconMenu.style.display === '') {
+                adminSideIconMenu.style.display = 'block';
+            } else {
+                adminSideIconMenu.style.display = 'none';
+            }
+
+            // Toggle Sub Verticle Menu
+            HideAllOpenedVerticleSideMenu();
+        }
+
+        function HideAllOpenedVerticleSideMenu() {
+            dashboardMenu.style.display = 'none';
+            catalogMenu.style.display = 'none';
+            suppliersMenu.style.display = 'none';
+            rfqMenu.style.display = 'none';
+            networkMenu.style.display = 'none';
+            othersMenu.style.display = 'none';
+            usersMenu.style.display = 'none';
+            integrationsMenu.style.display = 'none';
+            settingsMenu.style.display = 'none';
+            helpMenu.style.display = 'none';
+        }
+        /* End: Toggle Admin Mobile Side Menu */
+
+        /* Begin: Toggle Admin Mobile Search Bar */
+        function ToggleAdminMobileSearchBar() {
+            // Admin Side Icon Menu
+            var topMobileSearch = document.querySelector('.top-mobile-search');
+
+            // Toggle the display and transform of the search bar
+            if (topMobileSearch.style.display === 'none' || topMobileSearch.style.display === '') {
+                // Goto Top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                topMobileSearch.style.display = 'block';
+                setTimeout(function () {
+                    topMobileSearch.style.transform = 'translateX(0)';
+                    topMobileSearch.style.opacity = '1';
+                }, 10); // Delay to ensure display is set before applying transform and opacity
+            } else {
+                topMobileSearch.style.transform = 'translateX(-100%)';
+                topMobileSearch.style.opacity = '0';
+                setTimeout(function () {
+                    topMobileSearch.style.display = 'none';
+                }, 200); // Adjust the duration to match the CSS transition
+            }
+        }
+        /* End: Toggle Admin Mobile Search Bar */
+    </script>
+</body>
+</html>

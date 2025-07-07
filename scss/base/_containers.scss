@@ -1,0 +1,27 @@
+﻿@import "../abstracts/_colors.scss";
+
+.container-white-d-flex {
+    max-width: 1450px;
+    display:flex;
+    justify-content:space-between;
+    margin: auto;
+    background: white;
+}
+
+.container-transparent-d-flex {
+    max-width: 1450px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.container-transparent {
+    max-width: 1450px;
+    margin: auto;
+}
+
+/* Begin: container-admin */
+.container-admin {
+    background: white;
+    padding:0px 5px 5px 5px;
+}

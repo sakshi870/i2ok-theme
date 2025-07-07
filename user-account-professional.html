@@ -1,0 +1,1068 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Basic Meta Info -->
+    <title>O2YO B2B Portal</title>
+    <meta name="keywords" content="">
+    <meta name="author" content="Shafi Shaikh" />
+    <meta name="description" content="">
+
+    <!-- OpenGraph Meta -->
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:url" content="" />
+
+    <!-- Meta For Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@bhupeshimself">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image" content="logo.png">
+    <meta name="twitter:site" content="@bhupeshimself">
+    <meta name="twitter:description" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+    <!-- Stylesheets -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/themes/frontend/listing/_listing.min.css">
+
+    <!-- Dropdown -->
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns.css">
+    <link rel="stylesheet" type="text/css" href="vendors/dropdown/dropdowns-skin-discrete.css">
+
+    <!-- Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+    <!-- Begin: Top Main Menu -->
+    <div class="container-fluid top-main-menu-minimal">
+        <div class="container-transparent-d-flex">
+            <a href="#0" class="logo m-t-2">
+                <img src="img/logo.svg" title="Home" />
+            </a>
+            <!-- Categories Dropdown -->
+            <a href="javascript:void(0);" onclick="OpenFirstMenu()" class="m-t-7" id="btn-toggle">
+                <img src="img/buttons/toggle-open.png" class="toggle-button" title="categories" />
+            </a>
+            <!-- Categories Dropdown Close All Menu -->
+            <a href="javascript:void(0);" onclick="CloseAllMenu()" class="m-t-7" id="btn-toggle-close">
+                <img src="img/buttons/toggle-close.png" class="toggle-button" title="categories" />
+            </a>
+            <!-- Search -->
+            <input type="text" class="search-bar" placeholder="Search here..." />
+            <span class="search-button">
+                <a href="#0" class="link-icon m-r-5">
+                    <img src="img/buttons/btn-search.svg" title="Search" />
+                </a>
+            </span>
+            <!-- Text Link -->
+            <a href="#0" class="btn-call-to-action blue">
+                POST FREE AD
+            </a>
+            <!-- Country -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <img src="img/flags/circle/in.png" title="Country" />
+                <span class="m-l-5">IND</span>
+                <b></b>
+            </a>
+            <!-- Currency -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <span class="m-l-5">&#x20B9; INR</span>
+                <b></b>
+            </a>
+            <!-- Services -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <span class="m-l-5">ABOUT</span>
+            </a>
+            <!-- Services -->
+            <a href="#0" class="link-icon m-lr-5 m-t-7">
+                <img src="img/icon-billing/coin-2.svg" title="coins" />
+                <span>5000 COINS</span>
+            </a>
+            <!-- Chat -->
+            <a href="#0" class="link-icon m-lr-10 m-t-6">
+                <img src="img/icons/chat.svg" title="Chat" />
+            </a>
+            <!-- Help -->
+            <a href="#0" class="link-icon m-lr-10 m-t-6">
+                <img src="img/icons/help.svg" title="Help" />
+            </a>
+            <!-- Begin: Avtar and Login -->
+            <div class="d-flex">
+                <div class="dropdown me-1">
+                    <img src="img/icons/avtar.svg" title="Profile" class="m-l-10 m-t-3 dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                    <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End: Avtar and Login -->
+        </div>
+    </div>
+    <!-- End: Top Main Menu -->
+    <!-- Begin: Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="mega-menu">
+            <!-- Begin: First Menu -->
+            <div class="menu" id="menu-first">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuSecond()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link active-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: First Menu -->
+            <!-- Begin: Second Menu -->
+            <div class="menu" id="menu-second">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuThird()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: Second Menu -->
+            <!-- Begin: Third Menu -->
+            <div class="menu" id="menu-third">
+                <!-- Category -->
+                <a href="javascript:void(0);" onclick="ToggleMenuFourth()" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Apparels & Fashion</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Automobiles & Motors</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Hospitals & Medical Supplies</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Gifts & Crafts</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Consumer Goods</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Printing & Packaging</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Pharmaceutical Supplies </span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Other Products</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Chemicals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Construction & Interior</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Electronics & Electricals</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+                <!-- Category -->
+                <a href="#0" class="cat-link">
+                    <span>Health & Beauty</span>
+                    <img src="img/icons-color/arrow-right-2.png" alt="seo" />
+                </a>
+            </div>
+            <!-- End: Third Menu -->
+            <!-- Begin: Fourth Menu -->
+            <div class="menu" id="menu-fourth">
+                <div class="loading-data">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="m-t-10">Loading...</div>
+                </div>
+            </div>
+            <!-- End: Fourth Menu -->
+        </div>
+    </div>
+    <!-- End: Mega Menu -->
+    <!-- Begin: Top Mobile Menu-->
+    <div class="top-mobile-menu">
+        <!-- Toggle Categories -->
+        <div>
+            <a href="javascript:void(0);" onclick="ToggleMenu('menu-first')" title="Categories" id="toggle-menu">
+                <img src="img/icons/btn-toggle.png" alt="Categories" />
+            </a>
+        </div>
+        <!-- Logo -->
+        <div>
+            <a href="#0" title="O2YO" id="logo" class="m-l-5">
+                <img src="img/logo.svg" alt="O2YO" />
+            </a>
+        </div>
+        <!-- Search -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Search" onclick="ToggleAdminMobileSearchBar()">
+            <img src="img/icons/search.png" class="img-20" title="Search" />
+        </a>
+        <!-- Configure -->
+        <a href="#0" class="m-lr-5 m-t-3" title="Notification">
+            <img src="img/icons/cog.svg" class="img-20" title="Search" />
+        </a>
+        <!-- User Profile -->
+        <div class="d-flex">
+            <div class="dropdown me-1">
+                <img src="img/icons/avtar.svg" title="Profile" class="img-20 m-l-10 m-t-3 dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20" />
+                <ul class="dropdown-menu dropdown-menu-end right-aligned" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Search Bar -->
+    <div class="top-mobile-search">
+        <input type="text" class="search-input-mobile" placeholder="Search here..." />
+        <a href="#0" class="link-icon m-l-10">
+            <img src="img/buttons/btn-search.svg" title="Search" />
+        </a>
+    </div>
+    <!-- End: Top Mobile Menu -->
+    <!-- Begin: user profile account  -->
+
+    <div class="row-account-profile-user">
+        <div>
+            <!--<div class="col-12">-->
+            <div class="bread-crumb-ii">
+                <a href="#0" title="SEO Text">
+                    <img src="img/icons/home-grey-i.svg" alt="SEO Text">
+                </a>
+                <span>/</span>
+                <a href="#0" title="SEO Text">Account</a>
+                <span>/</span>
+                <a href="#0" title="SEO Text">Personal</a>
+            </div>
+
+            <div class="user-account-container">
+                <!--<div class="container">-->
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <div class="user-profile-image-center">
+
+                            <input type="file" id="avatar-upload" name="avatar" accept="image/png, image/jpeg" style="display: none;" />
+                            <div for="avatar-upload" class="user-account-profile-outerside">
+                                <img id="profile-image" class="user-account-profile-image" src="https://i.pinimg.com/originals/31/54/20/3154204284fb98ef1a893fb02e89dc9c.png" alt='profile' />
+                            </div>
+                            <div class="user-account-profile-name">Sakshi Jadhav</div>
+                            <div class="user-account-profile-updated">Profile last updated</div>
+                        </div>
+                    </div>
+
+                    <ul class="menu">
+                        <li class=" complete" data-tab="personal">
+                            <a href="user-account-profile.html" class="account-tab-link">
+                                <div class="user-account-tab-menu-main">
+                                    <div class="user-account-tab-main-table">Personal</div>
+                                    <div>
+                                        <img src="img/icon-form/check-green-5.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="active completed" data-tab="professional">
+                            <a href="user-account-professional.html" class="account-tab-link">
+                                <div class="user-account-tab-menu-main">
+                                    <div class="user-account-tab-main-table">Professional</div>
+                                    <div>
+
+                                        <img src="img/icon-form/check-grey-6.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-tab="address" class="completed">
+                            <a href="user-account-address.html" class="account-tab-link">
+
+                                <div class="user-account-tab-menu-main">
+                                    <div class="user-account-tab-main-table">Address</div>
+                                    <div>
+
+                                        <img src="img/icon-form/check-green-5.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="completed" data-tab="password">
+                            <a href="user-account-password-security.html" class="account-tab-link">
+                                <div class="user-account-tab-menu-main">
+                                    <div class="user-account-tab-main-table">Password & Security</div>
+                                    <div>
+
+                                        <img src="img/icon-form/check-grey-6.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="completed" data-tab="verification">
+                            <a href="user-account-verification.html" class="account-tab-link">
+
+                                <div class="user-account-tab-menu-main">
+                                    <div class="user-account-tab-main-table">Verification</div>
+                                    <div>
+
+                                        <img src="img/icon-form/check-green-5.png" />
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-content">
+
+
+                    <!-- Professional Section -->
+                    <div class="section active" id="professional">
+                        <div class="content-header">
+                            <div>professional</div>
+                        </div>
+                        <div class="row m-l-5 m-r-5">
+                            <!-- profile URL -->
+                            <div class="col-12 m-t-7 input-btn-container">
+                                <label>About Me</label>
+                                <div class="input-btn-wrapper">
+                                    <textarea rows="4" cols="50"></textarea>
+                                    <button type="button" class="toggle-btn-textarea">
+                                        <img src="img/icon-form/edit-7.png" />
+                                    </button>
+                                </div>
+                                <div class="text-info-6">
+                                    <a href="#0">
+                                        400 / 750 Words
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- First Name -->
+                            <div class="col-12 m-t-7 input-btn-container">
+                                <label>Company</label>
+                                <div class="input-btn-wrapper">
+                                    <input type="text">
+                                    <button type="button" class="toggle-btn">
+                                        <img src="img/icon-form/edit.png" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="col-12 m-t-7 input-btn-container">
+                                <label>Designation </label>
+                                <div class="input-btn-wrapper">
+                                    <input type="text">
+                                    <button type="button" class="toggle-btn">
+                                        <img src="img/icon-form/edit.png" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Date of Birth -->
+                            <div class="col-12 m-t-7 input-btn-container">
+                                <label>Education</label>
+                                <div class="input-btn-wrapper">
+                                    <input type="text">
+                                    <button type="button" class="toggle-btn">
+                                        <img src="img/icon-form/edit.png" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 m-t-7 input-btn-container">
+                                <label>Language</label>
+                                <div class="input-btn-wrapper">
+                                    <input type="text">
+                                    <button type="button" class="toggle-btn">
+                                        <img src="img/icon-form/edit.png" />
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end: user profile account  -->
+    <!-- Begin: Footer Main Menu -->
+    <div class="container-fluid bg-white m-b-5 m-t-10">
+        <div class="gird-footer-menu">
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        About O2YO
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="About Us">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="What We Do">
+                                What We Do
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Why Choose Us">
+                                Why Choose Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Success Stories">
+                                Success Stories
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">Help & Support</strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Help & Support">
+                                Help & Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Feedback & Suggestions">
+                                Feedback & Suggestions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Complaints">
+                                Complaints
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Jobs & Career">
+                                Jobs & Career
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Contact Us">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        For Buyers
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Global Sourcing">
+                                Global Sourcing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Request For Quotation (RFQ)">
+                                Request For Quotation (RFQ)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Search Products & Suppliers">
+                                Search Products & Suppliers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Audio & Video Conferencing">
+                                Audio & Video Conferencing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Followup & Bookmarks">
+                                Followup & Bookmarks
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="heading-container">
+                    <strong class="text-16 text-bold-500">
+                        For Suppliers
+                    </strong>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#0" class="link-default" title="Buy Leads">
+                                Buy Leads
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Sell Offers">
+                                Sell Offers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Product Promotion">
+                                Product Promotion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Website & SEO">
+                                Website & SEO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="link-default" title="Website & SEO">
+                                Website & SEO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid m-b-5">
+        <div class="grid-footer-powered-by d-flex justify-content-between">
+            <div>
+                Copyright 2025 @ All Rights Reserved
+            </div>
+            <div class="float-end">
+                <a href="#0" class="link-default">
+                    Powered By I2OK
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End: Footer Main Menu -->
+    <!-- Begin: Mobile Sticky Footer Menu -->
+    <div class="footer-mobile-menu">
+        <div>
+            <a href="#0" title="Home">
+                <img src="img/icons/home-grey-i.svg" alt="Home" />
+                <span>HOME</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Pricing">
+                <img src="img/icons/pricing.svg" alt="Pricing" />
+                <span>MESSAGES</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="RFQ">
+                <img src="img/icons/plus.png" alt="RFQ" />
+                <span><strong>POST ADD</strong></span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Talk">
+                <img src="img/icons/chat.svg" alt="Talk" />
+                <span>ACCOUNT</span>
+            </a>
+        </div>
+        <div>
+            <a href="#0" title="Help">
+                <img src="img/icons/arrow-up.svg" alt="Goto Top" id="goToTopButton" />
+                <span>TOP</span>
+            </a>
+        </div>
+    </div>
+    <!-- End: Mobile Sticky Footer Menu -->
+    <!-- Javascript -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dropdown -->
+    <script type="text/javascript" src="vendors/jquery/code.jquery.com_jquery-1.10.2.min.js"></script>
+
+    <!-- Begin: Owl Carousel -->
+    <!-- Installation: https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const avatarUpload = document.getElementById('avatar-upload');
+            const profileImage = document.getElementById('profile-image');
+
+            avatarUpload.addEventListener('change', function (e) {
+                if (e.target.files && e.target.files[0]) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (event) {
+                        profileImage.src = event.target.result;
+                    }
+
+                    reader.readAsDataURL(e.target.files[0]);
+                }
+            });
+        });
+
+        /* Begin: Goto Top */
+        const goToTopButton = document.getElementById('goToTopButton');
+
+        goToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        /* End: Goto Top */
+
+        /* Begin: Owl Carousel For User Cards */
+        $(document).ready(function () {
+            $('.card-user-container').owlCarousel({
+                loop: true,
+                stagePadding: 100,
+                margin: 8,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: true,  // Enable navigation
+                navText: ["<div class='owl-prev'>&#10094;</div>", "<div class='owl-next'>&#10095;</div>"], // Unicode arrows
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 6
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            })
+        });
+        /* End: Owl Carousel For Service Cards */
+
+        /* Begin: owl carousel for user cards */
+        $(document).ready(function () {
+            $('.category-menu').owlCarousel({
+                loop: true,
+                margin: 8,
+                autoWidth: true,
+                dots: false, // Hide dots
+                nav: true,  // Enable navigation
+                navText: ["<div class='owl-prev'>&#10094;</div>", "<div class='owl-next'>&#10095;</div>"], // Unicode arrows
+                autoplay: false,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 6 },
+                    1000: { items: 12 }
+                }
+            });
+        });
+        /* End: owl carousel for user cards */
+
+        /* Begin: Mega Menu */
+        function ToggleMenuFirst() {
+            var menu1 = document.getElementById('menu-first');
+            if (menu1.style.display === "none" || menu1.style.display === "") {
+                // Show menu
+                menu1.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu1.style.display = "none";
+            }
+        }
+
+        function ToggleMenuSecond() {
+            // Show menu-second
+            var menu2 = document.getElementById('menu-second');
+            menu2.style.display = "inline-block";
+
+            // Hide menu-fourth
+            var menu4 = document.getElementById('menu-fourth');
+            menu4.style.display = "none";
+
+            // Hide menu-third
+            var menu3 = document.getElementById('menu-third');
+            menu3.style.display = "none";
+        }
+
+        function ToggleMenuThird() {
+            var menu3 = document.getElementById('menu-third');
+            if (menu3.style.display === "none" || menu3.style.display === "") {
+                // Show menu
+                menu3.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu3.style.display = "none";
+            }
+        }
+
+        function ToggleMenuFourth() {
+            var menu4 = document.getElementById('menu-fourth');
+            if (menu4.style.display === "none" || menu4.style.display === "") {
+                // Show menu
+                menu4.style.display = "inline-block";
+            } else {
+                // Hide menu
+                menu4.style.display = "none";
+            }
+        }
+
+        function OpenFirstMenu() {
+            // open menu-first
+            var m1 = document.getElementById('menu-first');
+            m1.style.display = "inline-block";
+            // btn-toggle
+            var btnToggle = document.getElementById('btn-toggle');
+            btnToggle.style.display = "none";
+            // btn-toggle-close
+            var btnToggleClose = document.getElementById('btn-toggle-close');
+            btnToggleClose.style.display = "inline-block";
+        }
+
+        function CloseAllMenu() {
+            // get menu by id
+            var m1 = document.getElementById('menu-first');
+            var m2 = document.getElementById('menu-second');
+            var m3 = document.getElementById('menu-third');
+            var m4 = document.getElementById('menu-fourth');
+            // display:none
+            m1.style.display = "none";
+            m2.style.display = "none";
+            m3.style.display = "none";
+            m4.style.display = "none";
+            // btn-toggle-close
+            var btnToggleClose = document.getElementById('btn-toggle-close');
+            btnToggleClose.style.display = "none";
+            // btn-toggle
+            var btnToggle = document.getElementById('btn-toggle');
+            btnToggle.style.display = "inline-block";
+        }
+        /* End: Mega Menu */
+
+        /* begin: show hide filter */
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterDiv = document.querySelector(".form-search-filter");
+            const toggleBtn = document.querySelector(".toggle-filters");
+
+            // Initially hide the filter
+            filterDiv.classList.add("hidden");
+            toggleBtn.textContent = "Show Filters ↓";
+
+            toggleBtn.addEventListener("click", function () {
+                filterDiv.classList.toggle("hidden");
+
+                // Toggle text content
+                if (filterDiv.classList.contains("hidden")) {
+                    toggleBtn.textContent = "Show Filters ↓";
+                    toggleBtn.style.marginBottom = "10px"; // Add bottom margin when hidden
+                } else {
+                    toggleBtn.textContent = "Hide Filters ↑";
+                    toggleBtn.style.marginBottom = "0px"; // Remove margin when shown
+                }
+            });
+        });
+        /* end: show hide filter */
+
+        // user profile menu
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuItems = document.querySelectorAll('.menu li');
+
+            // Mark all sections as completed except the active one
+            menuItems.forEach(item => {
+                if (!item.classList.contains('active')) {
+                    item.classList.add('completed');
+                }
+            });
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    // Remove active class from all menu items and sections
+                    menuItems.forEach(i => {
+                        i.classList.remove('active');
+                        if (!i.classList.contains('completed')) {
+                            i.classList.add('completed');
+                        }
+                    });
+
+                    document.querySelectorAll('.section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+
+                    // Add active class to clicked menu item and remove completed
+                    this.classList.add('active');
+                    this.classList.remove('completed');
+
+                    // Show corresponding section
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

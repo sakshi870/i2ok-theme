@@ -1,0 +1,272 @@
+﻿@import "../../scss/abstracts/_colors.scss";
+@import "../../scss/abstracts/_variables.scss";
+@import "../../scss/abstracts/_mixins.scss";
+@import "../../scss/abstracts/_links.scss";
+
+/* Outline */
+.button-outline {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: $c-black-1;
+    height: 28px;
+    padding: 3px 10px;
+    border: 1px solid $c-blue-default;
+    background-color: $c-white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-outline:hover {
+    background-color: $c-blue-default;
+    color: $c-white;
+    border: 1px solid $c-blue-default;
+}
+
+/* Grey */
+.button-outline-grey {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: $c-black-1;
+    height: 28px;
+    padding: 3px 10px;
+    border: 1px solid $c-grey-8;
+    background-color: $c-white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-outline-grey:hover {
+    background-color: $c-white;
+    color: $c-black-1;
+    border: 1px solid $c-black-1;
+}
+
+/* Outline Green */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+        background: linear-gradient(90deg, $c-green-1, $c-green-1);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-8px) rotate(-5deg);
+        background: linear-gradient(90deg, $c-green-1, $c-green-2);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translateX(8px) rotate(5deg);
+        background: linear-gradient(90deg, $c-blue-default, $c-blue-dark);
+    }
+}
+
+.button-outline-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: $c-white;
+    height: 28px;
+    padding: 3px 10px;
+    border: 1px solid $c-green-1;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.1s, transform 0.1s, box-shadow 0.1s;
+    animation: shake 0.1s ease-in-out infinite, shakeDelay 1s infinite;
+}
+
+.button-outline-green:hover {
+    color: $c-white;
+    transform: scale(1.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: shake 0.1s ease-in-out infinite, shakeDelay 1s infinite;
+}
+
+@keyframes shakeDelay {
+    0%, 100% {
+        transform: none;
+        background: linear-gradient(90deg, $c-green-1, $c-green-1);
+    }
+
+    50% {
+        transform: translateX(-8px) rotate(-5deg);
+        background: linear-gradient(90deg, $c-green-1, $c-green-1);
+    }
+}
+
+
+
+/* Default Blue */
+.button-blue-default {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    font-weight: 500;
+    color: $c-white;
+    height: 28px;
+    padding: 3px 10px;
+    background-color: $c-blue-default;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+    @media (max-width: 768px) {
+        //margin-top: 2px;
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+        font-size: 0.7rem;
+        border-radius: 0px;
+    }
+}
+
+.button-blue-default:hover {
+    background-color: $c-blue-dark;
+    color: $c-white;
+}
+
+/* button-blue-normal-width-sm */
+.button-blue-normal-width-sm {
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: $c-white;
+    height: 25px;
+    padding: 3px 10px;
+    background-color: $c-blue-default;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-blue-normal-width-sm {
+    background-color: $c-blue-dark;
+    color: $c-white;
+}
+
+.button-blue-normal-width-sm:hover {
+    background-color: $c-blue-dark-1;
+    color: $c-white;
+}
+
+/* Default Green */
+.button-green-default {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: $c-white;
+    height: 28px;
+    padding: 3px 10px;
+    background-color: $c-green-1;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-green-default:hover {
+    background-color: $c-green-2;
+    color: $c-white;
+}
+
+/* Default Grey */
+.button-grey-default {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: #353535;
+    height: 28px;
+    padding: 3px 10px;
+    background-color: $c-grey-39;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-grey-default:hover {
+    background-color: $c-grey-40;
+    color: $c-black-1;
+}
+
+/* Default Red */
+.button-red-normal-width {
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: $c-white;
+    height: 28px;
+    padding: 3px 10px;
+    background-color: $c-red-6;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button-red-normal-width {
+    background-color: $c-red-6;
+    color: $c-white;
+}
+
+.button-red-normal-width:hover {
+    background-color: $c-red-7;
+    color: $c-white;
+}
+
+/* Icon Button */
+.button-icon {
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: $c-black-1;
+    height: 20px;
+    padding: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.button-icon:hover {
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    font-size: 14px;
+    color: $c-black-1;
+    height: 20px;
+    padding: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* button-text */
+.button-text {
+    text-decoration: none;
+    color: $c-black-1;
+    font-weight:normal;
+
+    :hover {
+        color: $c-blue-default;
+    }
+}
+
+.button-text:hover {
+    color: $c-blue-default;
+}
+
+.button-text.blue {
+    text-decoration: none;
+    color: $c-blue-default;
+    font-weight: normal;
+
+    :hover {
+        color: $c-blue-default-dark;
+    }
+}
+/* button-text */

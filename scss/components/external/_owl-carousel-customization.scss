@@ -1,0 +1,33 @@
+﻿/* begin: owl carousel left right arrow */
+.owl-prev, .owl-next {
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10; /* Ensure it stays above carousel */
+}
+
+/* Positioning arrows at the edges of the carousel */
+.owl-prev {
+    left: 0px; /* Adjust based on layout */
+}
+
+.owl-next {
+    right: 0px; /* Adjust based on layout */
+}
+
+/* Hover effect */
+.owl-prev:hover, .owl-next:hover {
+    background: rgba(0, 0, 0, 0.9); /* Darker on hover */
+}
+/* end: owl carousel left right arrow */

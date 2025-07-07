@@ -1,0 +1,607 @@
+﻿@import "../abstracts/_colors.scss";
+@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/_links.scss";
+@import "../base/_fonts.scss";
+
+
+/* begin: wizard-radio */
+.wizard-form {
+    background-color: #eef2f1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    //padding-top: 25px;
+
+    .wiz-container {
+        background: $c-white;
+        border-radius: 3px;
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            //margin: 0 5px;
+            //max-width: 95%;
+            margin: 0px;
+            width: 100% !important;
+            //height: fit-content !important;
+        }
+
+        .wiz-heading-plans {
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 600;
+            //background-color: red;
+            font-family: Inter;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 1px solid $c-grey-2;
+            flex-shrink: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 10px 0px 15px 0px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            max-width: 100%;
+
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(3, 2fr);
+                gap: 10px;
+            }
+        }
+
+        .header-item {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .data-item {
+            font-size: 1rem;
+            border: 1px solid #D7D6D6;
+            padding: 15px 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+
+            @media (max-width: 768px) {
+                //display: block;
+                padding: 7px 0px 7px 0px !important;
+                line-height: 1rem !important;
+            }
+
+            input {
+                //width: 100px !important;
+                //background-color: red;
+                //margin: 10px; /* Add margin to prevent overlap */
+                transform: scale(1.5); /* 1.5 times the original size */
+                margin-bottom: 6px;
+
+                @media (max-width: 768px) {
+                    //display: block;
+                    transform: scale(1.4) !important; /* 1.5 times the original size */
+                    margin-bottom: 6px;
+                  
+                }
+            }
+
+            .wiz-plans-sub-tag {
+                font-family: Inter;
+                font-size: 1rem;
+                font-weight: 600;
+                //background-color:red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    font-size: 0.9rem !important;
+                }
+
+                img {
+                    //margin-top:-6px;
+                    width: 20px;
+                    margin-right: 4px;
+                    //text-align:end;
+                }
+            }
+
+            .wiz-plans-days {
+                font-family: Inter;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: 2px 0px 2px 0px;
+
+                @media (max-width: 768px) {
+                    font-size: 0.8rem !important;
+                    font-weight: 400;
+                }
+            }
+
+            .wiz-plans-ads {
+                font-family: Inter;
+                font-size: 0.9rem;
+                color: #535353;
+                font-weight: 400;
+
+                @media (max-width: 768px) {
+                    font-size: 0.7rem !important;
+                }
+            }
+        }
+
+
+
+        .days {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+
+        .wiz-heading {
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 500;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 1px solid $c-grey-2;
+            flex-shrink: 0;
+
+            a {
+                text-decoration: none;
+                color: $c-black-1;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-bottom: -1px;
+                margin-right: 5px;
+            }
+        }
+
+        .wiz-form {
+            font-size: 1rem;
+            padding: 20px;
+            width: 100%;
+            overflow-y: auto;
+            flex-grow: 1;
+
+            @media (max-width: 768px) {
+                //display: block;
+                padding: 15px !important;
+            }
+
+            .wiz-plans-individual-users {
+                font-weight: 600;
+                font-family: Inter;
+                font-size: 0.9rem;
+                margin-bottom: 4px;
+
+                @media (max-width: 768px) {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .wiz-plans-occasional-ads {
+                //font-weight: 500;
+                font-family: Inter;
+                font-size: 0.9rem;
+
+                @media (max-width: 768px) {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .wiz-sub-heading {
+                background-color: rgb(235, 235, 235);
+                padding: 5px;
+                border-radius: 2px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .wiz-field-group-from {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 5%;
+                width: 100%;
+                margin-bottom: 2rem;
+                margin-top: 0.5rem;
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+
+            .plans-container {
+                display: grid;
+                //grid-template-columns: 1fr, 2fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                max-width: 1200px;
+                margin-top: 15px;
+
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+
+            .plan {
+                background-color: white;
+                border-radius: 4px;
+                //padding: 25px;
+                border: 1px solid #D7D6D6;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 10px !important;
+                }
+            }
+
+
+            .plan-title {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #2d3748;
+                font-family: Inter;
+
+                @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+
+            .wiz-plans-heading-seaction {
+                background-color: #F2F3F5;
+                display: flex;
+                gap: 10px;
+                padding: 7px 15px 7px 15px;
+                border-bottom: 1px solid #D7D6D6;
+                justify-content: space-between;
+                margin-bottom: 7px;
+
+                div {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                }
+
+                img {
+                    width: 30px !important;
+                    height: 30px !important;
+                    //background-color:red;
+                }
+
+                input {
+                    transform: scale(1.5); /* 1.5 times the original size */
+                    //margin: 10px; /* Add margin to prevent overlap */
+                    //margin-bottom: 6px;
+                }
+            }
+
+            .plan-price {
+                font-size: 1.2rem;
+                font-weight: 500;
+                font-family: Inter;
+                //background-color:red;
+                //text-align: center;
+                //margin-bottom: 20px;
+                @media (max-width: 768px) {
+                    font-size: 0.9rem !important;
+                }
+            }
+
+            .wiz-plan-main-seaction {
+                padding: 10px;
+            }
+
+            .plan-features {
+                list-style-type: none;
+                padding: 0;
+                margin-top: 6px;
+                color: #454545;
+                font-size: 1rem;
+                line-height: 1.4rem;
+                font-weight: 500;
+
+                @media (max-width: 768px) {
+                    font-size: 0.8rem;
+                }
+            }
+
+
+            .highlight {
+                font-size: 1rem;
+                //line-height: 1rem;
+                font-weight: 600;
+                color: $c-green-default-light;
+
+                @media (max-width: 768px) {
+                    font-size: 0.8rem;
+                }
+            }
+            /* Plan-specific colors */
+
+
+            .field-group label {
+                display: flex;
+                display: block;
+                margin-bottom: 5px;
+                /* font-weight: bold; */
+            }
+
+            .main-container {
+                display: flex;
+                margin-top: 12px;
+            }
+
+            .wiz-radio-container {
+                display: flex;
+                position: relative;
+                padding-left: 30px;
+                margin-right: 20px;
+                cursor: pointer;
+                font-size: 16px;
+                user-select: none;
+                line-height: 20px;
+            }
+            /* Hide the default radio button */
+            .wiz-radio-container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            /* Create a custom radio button */
+            .radio-circle {
+                position: absolute;
+                top: 2px;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: transparent;
+                border: 2px solid #1e90ff; /* Blue border as in the image */
+                border-radius: 50%;
+            }
+            /* When the radio button is checked, add a blue filled circle */
+            .wiz-radio-container input:checked ~ .radio-circle {
+                background-color: white; /* Blue fill for selected */
+            }
+            /* Create the inner dot for the checked state */
+            .wiz-radio-container input:checked ~ .radio-circle::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 10px;
+                height: 10px;
+                background-color: blue; /* center dot */
+                border-radius: 50%;
+            }
+            /* Optional: Style for the select dropdown to match the form's look */
+            select {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            .field-group {
+                //margin-bottom: 1rem;
+                width: 100%;
+                box-sizing: border-box;
+
+
+
+                @media (max-width: 768px) {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                /* Add to your global CSS or style tag */
+                .select__control {
+                    min-height: fit-content;
+                    //max-height: 40px !important;
+                    overflow-y: auto !important;
+                }
+
+                .select__value-container {
+                    display: flex !important;
+                    flex-wrap: wrap !important;
+                    gap: 4px !important;
+                    align-items: center !important;
+                }
+
+                .select__multi-value {
+                    margin: 0 !important;
+                    max-width: 180px !important;
+                }
+
+                .field-group {
+                    min-height: 80px;
+                    /* Ensure consistent height for all field groups */
+                }
+
+                label {
+                    color: #1D1D1D;
+                    display: block;
+
+                    .required {
+                        color: $c-red-default;
+                    }
+                }
+
+                input, select {
+                    color: #1D1D1D;
+                    //display: block;
+                    padding: 7px;
+                    height: 35px;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                    width: 100%;
+                    background-color: $c-white;
+                    //background-color: #eef2f1;
+                    border: 1px solid $c-grey-28;
+                    border-radius: 3px;
+                    outline: none;
+                }
+
+                input::placeholder, select::placeholder {
+                    color: #616161;
+                }
+
+                textarea {
+                    color: #1D1D1D;
+                    display: block;
+                    padding: 7px;
+                    height: auto;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                    width: 100%;
+                    background-color: #eef2f1;
+                    border: 1px solid $c-grey-28;
+                    border-radius: 3px;
+                    outline: none;
+                }
+
+                .info {
+                    font-size: 0.8rem;
+                    color: $c-black-3;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .wiz-icon-holder-3-col {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr); // ✅ 3 equal columns
+                gap: 10px;
+
+
+                @media (max-width: 768px) {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr); // ✅ 3 equal columns
+                    gap: 10px;
+                }
+
+                .icon {
+                    border: 1px solid $c-grey-2;
+                    border-radius: 3px;
+                    background-color: #eef2f1;
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 0.9rem;
+                    padding: 3px;
+                    color: $c-black-1;
+                    text-decoration: none;
+                    transition: background-color 0.2s ease;
+
+                    &:hover {
+                        background-color: $c-white;
+                    }
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+
+            .wiz-icon-list {
+                .icon {
+                    width: 100%;
+                    display: block;
+                    border: 1px solid $c-grey-2;
+                    border-radius: 3px;
+                    background-color: #eef2f1;
+                    height: auto;
+                    align-items: center;
+                    text-align: left;
+                    font-size: 1rem;
+                    padding: 10px;
+                    color: $c-black-1;
+                    text-decoration: none;
+                    transition: background-color 0.2s ease;
+                    margin-top: 7px;
+
+                    .count {
+                        color: $c-grey-3;
+                        margin-left: 5px;
+                    }
+
+                    .down-arrow::after {
+                        content: "\1F806"; // Unicode for ⬇
+                        color: $c-grey-3;
+                        display: inline-block;
+                        font-size: 1rem; // Adjust as needed
+                        margin-left: 5px; // Optional spacing
+                        float: right;
+                    }
+
+                    &:hover {
+                        background-color: $c-white;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        .wiz-footer {
+            font-size: 1rem;
+            text-align: center;
+            padding: 15px 10px;
+            width: 100%;
+            border-top: 1px solid $c-grey-2;
+            flex-shrink: 0;
+
+            a {
+                color: $c-white;
+                padding: 5px 10px;
+                border-radius: 3px;
+                text-align: center;
+                text-decoration: none;
+                background-color: $c-blue-default;
+
+                img {
+                    width: 13px;
+                    height: 13px;
+                }
+
+                img.white {
+                    filter: invert(100%) brightness(100%) contrast(100%);
+                }
+            }
+
+            a.color-blue {
+                color: $c-white;
+                background-color: $c-blue-default;
+            }
+
+            a.color-yellow {
+                color: $c-yellow-5-dark;
+                background-color: $c-yellow-4;
+            }
+        }
+    }
+}

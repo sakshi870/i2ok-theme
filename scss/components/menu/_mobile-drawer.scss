@@ -1,0 +1,89 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initial position outside the viewport */
+    width: 80px;
+    height: 100vh; /* Adjust the height as needed */
+    overflow-y: auto;
+    color: white;
+    background-color: $c-white;
+    border-right:1px solid $c-grey-1;
+    transition: left 0.3s ease-in-out;
+    z-index: 20000 !important;
+}
+
+.mobile-drawer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mobile-drawer li {
+    padding: 0px;
+}
+
+.mobile-drawer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 3px;
+}
+
+.mobile-drawer.open {
+    left: 0; /* Move the drawer to the left to show it */
+}
+
+.mobile-drawer .icon-holder {
+    width: 80px;
+    padding:5px;
+    border-bottom:1px #f2f2f2 solid;
+}
+
+.mobile-drawer .icon-holder img:hover {
+    height: 25px;
+    animation: move 1s ease-in-out infinite;
+}
+
+.mobile-drawer .icon-holder img {
+    height: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mobile-drawer .icon-holder img::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.mobile-drawer .icon-holder span {
+    display: block;
+    font-size: 12px;
+    color: $c-black-1;
+    margin-top: 3px !important;
+}
+
+/* Style the scrollbar for WebKit-based browsers */
+.mobile-drawer::-webkit-scrollbar {
+    width: 3px; /* Adjust the width as desired */
+    background-color: #f0f0f0; /* Set the background color */
+}
+
+/* Style the scrollbar thumb */
+.mobile-drawer::-webkit-scrollbar-thumb {
+    background-color: $c-grey-8; /* Set the scrollbar thumb color */
+}
+
+/* Style the scrollbar thumb on hover */
+.mobile-drawer::-webkit-scrollbar-thumb:hover {
+    background-color: #b6b6b6; /* Set the scrollbar thumb color on hover */
+}
+
+/* Style the scrollbar track */
+.mobile-drawer::-webkit-scrollbar-track {
+    background-color: $c-white; /* Set the scrollbar track color */
+}

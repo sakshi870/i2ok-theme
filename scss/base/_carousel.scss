@@ -1,0 +1,99 @@
+
+
+.category-menu-new-carousel {
+    position: relative;
+    z-index: 1;
+    display: flex; /* Changed to flex for better control */
+    gap: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.category-new-carousel {
+    width: 150px !important;
+    height: 185px !important;
+    border-radius: 7px;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #fff; /* Optional: Matches the image background */
+}
+
+.category-img {
+    width: 150px; /* Fixed width */
+    height: 165px; /* Fixed height for the image portion */
+    display: block;
+    object-fit: cover; /* Ensures image fills the space */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    vertical-align: bottom; /* Removes phantom space under images */
+}
+
+.category-img-bg {
+    width: 150px; /* Matches the fixed width */
+    height: 165px; /* Fixed height for image container */
+    overflow: hidden;
+}
+
+.last-category-text {
+    color: white;
+    font-size: 0.7rem !important;
+    line-height: normal;
+    font-family: Inter !important;
+    font-weight: 300 !important;
+    text-align: center !important;
+    padding: 5px !important;
+    width: 100% !important;
+    background-color: #0A051B !important;
+    border-bottom-left-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+    margin: -1px 0 0 0;
+    //box-shadow: 0 0 0 1px #0A051B;
+    position: relative;
+    z-index: 1;
+    height: 26px; /* Fixed height for text area to complete 200px total */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+//home carousel start
+
+.category-home-carousel {
+    //display: flex; /* Changed to flex for better control */
+    //gap: 10px;
+    //padding-bottom: 10px;
+    //background-color:red;
+    //width: 100vw;
+    //height:270px;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.category-home-carousel-main {
+    //width: 100% !important;
+    //height: 270px !important;
+    border-radius: 7px;
+    //overflow: hidden;
+    line-height: 0;
+    background-color:brown;
+    font-size: 0;
+    //display: inline-flex;
+    //flex-direction: column;
+}
+
+.category-img-home-carousel {
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+

@@ -1,0 +1,445 @@
+﻿@import "../../abstracts/_colors.scss";
+@import "../../abstracts/_variables.scss";
+@import "../../abstracts/_mixins.scss";
+@import "../../abstracts/_links.scss";
+
+.table-user {
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    color: #000000;
+
+    .item-container {
+        height: 100vh;
+        width: 100vw;
+        background-color: $c-white !important;
+    }
+
+    #filter {
+        background-color: $c-grey-10 !important;
+        padding: 5px 5px 10px 5px !important;
+        border-bottom: 1px solid #d3d3d3 !important;
+        border-top: 1px solid #d3d3d3 !important;
+    }
+
+    input, select {
+        width: 100%;
+        height: 25px !important;
+        padding-left: 5px !important;
+        border: 1px solid $c-grey-4 !important;
+    }
+
+    input[type=checkbox] {
+        height: 11px !important;
+        width: auto !important;
+        margin-right: 5px !important;
+    }
+
+    .strip:hover {
+        background-color: $c-grey-11 !important;
+        border: 1px solid #e8e8e8 !important;
+    }
+
+    .status-img {
+        width: 15px;
+        margin-right: 3px;
+    }
+
+    .record {
+        border: 1px solid $c-grey-1 !important;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    .preloader {
+        border: 1px solid $c-grey-1 !important;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        height: 100vh;
+        text-align: center;
+        background-color: #FCFCFC;
+
+        img {
+            margin-top: 50px;
+            width: 250px;
+            height: auto;
+        }
+
+        .loading-text {
+            font-size: 18px;
+            margin-top: 5px;
+            color: $c-grey-12;
+        }
+    }
+
+    .record .active-status {
+        padding: 3px 7px 3px 7px !important;
+        background-color: #e2fac6 !important;
+        color: #000000 !important;
+        border-radius: 3px;
+
+        img {
+            width: 20px;
+            margin-right: 3px;
+        }
+    }
+
+    .record .inactive-status {
+        padding: 3px 7px 3px 7px !important;
+        background-color: #ffe7e7 !important;
+        color: #000000 !important;
+        border-radius: 3px;
+
+        img {
+            width: 20px;
+            margin-right: 3px;
+        }
+    }
+    /* Begin: Record 7 Grid */
+    @media (max-width: 1500px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 810px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 688px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .record {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+    /* End: Record 7 Grid */
+}
+
+/* Change even and odd background colors */
+.table-user:nth-child(even) {
+    background-color: $c-grey-10 !important;
+}
+
+.table-user:nth-child(odd) {
+    background-color: white !important;
+}
+
+.table-user:last-of-type {
+    margin-bottom:50px;
+}
+
+/* Pagination */
+.pagination-container {
+    padding: 10px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: $c-grey-10 !important;
+    padding: 5px 5px 10px 5px !important;
+    border-top: 1px solid #d3d3d3 !important;
+    font-size: 14px !important;
+
+    input, select {
+        height: 25px !important;
+        padding-left: 5px !important;
+        border: 1px solid $c-grey-4 !important;
+    }
+
+    .side-by-side-div {
+        display: inline-block;
+    }
+
+    .page-number {
+        width: 100px !important;
+    }
+}
+
+/* Begin: table-user-6-grid */
+.table-user-6-grid {
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    color: #000000;
+
+    .item-container {
+        height: 100vh;
+        width: 100vw;
+        background-color: $c-white !important;
+    }
+
+    #filter {
+        background-color: $c-grey-10 !important;
+        padding: 5px 5px 10px 5px !important;
+        border-bottom: 1px solid #d3d3d3 !important;
+        border-top: 1px solid #d3d3d3 !important;
+    }
+
+    input, select {
+        width: 100%;
+        height: 25px !important;
+        padding-left: 5px !important;
+        border: 1px solid $c-grey-4 !important;
+    }
+
+    input[type=checkbox] {
+        height: 11px !important;
+        width: auto !important;
+        margin-right: 5px !important;
+    }
+
+    .strip:hover {
+        background-color: $c-grey-11 !important;
+        border: 1px solid #e8e8e8 !important;
+    }
+
+    .status-img {
+        width: 15px;
+        margin-right: 3px;
+    }
+
+    .record {
+        border: 1px solid $c-grey-1 !important;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+
+    .preloader {
+        border: 1px solid $c-grey-1 !important;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        height: 100vh;
+        text-align: center;
+        background-color: #FCFCFC;
+
+        img {
+            margin-top: 50px;
+            width: 250px;
+            height: auto;
+        }
+
+        .loading-text {
+            font-size: 18px;
+            margin-top: 5px;
+            color: $c-grey-12;
+        }
+    }
+
+    .record .active-status {
+        padding: 3px 7px 3px 7px !important;
+        background-color: #e2fac6 !important;
+        color: #000000 !important;
+        border-radius: 3px;
+
+        img {
+            width: 20px;
+            margin-right: 3px;
+        }
+    }
+
+    .record .inactive-status {
+        padding: 3px 7px 3px 7px !important;
+        background-color: #ffe7e7 !important;
+        color: #000000 !important;
+        border-radius: 3px;
+
+        img {
+            width: 20px;
+            margin-right: 3px;
+        }
+    }
+    /* Begin: Record 7 Grid */
+    @media (max-width: 1500px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 810px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 688px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .record {
+            padding: 5px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .record {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+        }
+    }
+    /* End: Record 7 Grid */
+}
+
+/* Change even and odd background colors */
+.table-user-6-grid:nth-child(even) {
+    background-color: $c-grey-10 !important;
+}
+
+.table-user-6-grid:nth-child(odd) {
+    background-color: white !important;
+}
+
+.table-user-6-grid:last-of-type {
+    margin-bottom: 50px;
+}
+
+/* Pagination */
+.pagination-container {
+    padding: 10px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: $c-grey-10 !important;
+    padding: 5px 5px 10px 5px !important;
+    border-top: 1px solid #d3d3d3 !important;
+    font-size: 14px !important;
+
+    input, select {
+        height: 25px !important;
+        padding-left: 5px !important;
+        border: 1px solid $c-grey-4 !important;
+    }
+
+    .side-by-side-div {
+        display: inline-block;
+    }
+
+    .page-number {
+        width: 100px !important;
+    }
+}
+/* End: table-user-6-grid */
+
+/* Begin: user-details */
+.user-details {
+    background-color: white;
+    padding: 10px;
+    height: 100vh;
+    border-left:1px solid $c-grey-2;
+}
+/* End: user-details */

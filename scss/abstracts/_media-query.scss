@@ -1,0 +1,48 @@
+﻿/* Begin: Admin Theme Media Queries */
+
+/* container-admin */
+/* Hide in devices larger than 925px */
+@media (min-width: 926px) {
+    #admin-top-menu-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 925px) {
+
+    // Hide
+    .admin-side-icon-menu {
+        display: none;
+    }
+
+    // Hide
+    .container-admin {
+        display: none;
+    }
+
+    // Hide
+    #admin-top-menu-desktop {
+        display: none !important;
+    }
+    
+    // Hide
+    .top-mobile-search {
+        display: none;
+    }
+
+    // Hide
+    .admin-main-body {
+        margin: 0px !important;
+        border-top: none !important;
+    }
+
+    // Show
+    #admin-top-menu-mobile {
+        display: flex !important;
+    }
+
+    .footer-mobile-menu {
+        margin:0px !important;
+    }
+}
+/* End: Admin Theme Media Queries */
