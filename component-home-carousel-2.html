@@ -123,7 +123,7 @@
     </div>
     <!-- End: Top Main Menu -->
     <!-- Begin: Mega Menu -->
-    <div class="mega-menu-container" style="background-color:red">
+    <div class="mega-menu-container">
         <div class="mega-menu">
             <!-- Begin: First Menu -->
             <div class="menu" id="menu-first">
@@ -556,35 +556,33 @@
             <img src="img/buttons/btn-search.svg" title="Search" />
         </a>
     </div>
+
+   
     <!-- End: Top Mobile Menu -->
 
 
+    <div class=" container-fluid-home-carousel">
+        <div class="category-home-carousel owl-carousel owl-loaded owl-drag   ">
+            <!-- category -->
 
+            <div class="category-home-carousel-main">
+                <img src="img/banners/home-carousel-1.jpg" class="category-img-home-carousel" />
+            </div>
+
+            <div class="category-home-carousel-main">
+                <img src="img/banners/home-carousel-2.jpg" class="category-img-home-carousel" />
+            </div>
+        </div>
+
+    </div>
 
 
 
     <!-- Begin: Body -->
-    <div class="container-fluid m-t-15">
+    <div class="container-fluid m-t-10">
         <div class="container-transparent">
             <!-- home carousel -->
             <!-- begin: category-menu -->
-            <div class="category-home-carousel owl-carousel owl-loaded owl-drag  m-t-10 ">
-                <!-- category -->
-
-                    <div class="category-home-carousel-main">
-                        <!--<div  class="category-img-home-carousel" >lorem</div>-->
-                        <img src="img/banners/home-carousel-1.jpg" class="category-img-home-carousel" />
-                    </div>
-
-                    <div class="category-home-carousel-main">
-                        <img src="img/banners/home-carousel-2.jpg" class="category-img-home-carousel" />
-                    </div>
-
-               
-            </div>
-
-
-
             <!-- begin: category-menu -->
             <div class="category-menu-new-carousel owl-carousel owl-loaded owl-drag  m-t-10 ">
                 <!-- category -->
@@ -1280,7 +1278,7 @@
                             </div>
                         </div>
                         <!--</div>
-                <div class="item">-->
+                        <div class="item">-->
                         <div class="main-menu-items-ads-plans">
                             <div>
                                 <!--<div class="main-menu-info-ads-plans">-->
@@ -1294,7 +1292,7 @@
                             </div>
                         </div>
                         <!--</div>
-                <div class="item">-->
+                        <div class="item">-->
                         <div class="main-menu-items-ads-plans">
                             <div>
                                 <div class="main-menu-info-ads-plans-badges-seaction">
@@ -1953,7 +1951,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="container-fluid m-b-5">
         <div class="grid-footer-powered-by d-flex justify-content-between">
             <div>
@@ -2218,6 +2216,30 @@
                 }
             });
         });
+        function ToggleAdminMobileSearchBar() {
+            // Admin Side Icon Menu
+            var topMobileSearch = document.querySelector('.top-mobile-search');
+
+            // Toggle the display and transform of the search bar
+            if (topMobileSearch.style.display === 'none' || topMobileSearch.style.display === '') {
+                // Goto Top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                // Show Search Bar
+                topMobileSearch.style.display = 'block';
+                setTimeout(function () {
+                    topMobileSearch.style.transform = 'translateX(0)';
+                    topMobileSearch.style.opacity = '1';
+                },
+                    10); // Delay to ensure display is set before applying transform and opacity
+            } else {
+                topMobileSearch.style.transform = 'translateX(-100%)';
+                topMobileSearch.style.opacity = '0';
+                setTimeout(function () {
+                    topMobileSearch.style.display = 'none';
+                }, 200); // Adjust the duration to match the CSS transition
+            }
+        }
         /* end: show hide filter */
     </script>
 </body>
