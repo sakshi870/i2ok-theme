@@ -6395,7 +6395,6 @@
 
 /* Begin: product-grid-5 */
 .product-grid-search-result {
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr) !important; /* Create 5 equal-width columns */
   grid-template-rows: auto;
@@ -6673,11 +6672,11 @@
 .search-result-main {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 6px;
 }
 
 .grid-width-search-result {
-  width: 75%;
+  width: 80% !important;
 }
 
 .stated-search-result {
@@ -6686,7 +6685,8 @@
 
 /* Add this CSS */
 .search-result-main-section {
-  width: 25%;
+  width: 20%;
+  margin-bottom: 10px;
   display: block;
   background-color: white;
   transition: transform 0.3s ease;
@@ -6695,14 +6695,14 @@
 /* Mobile Sidebar - Right Side Version */
 @media (max-width: 810px) {
   .grid-width-search-result {
-    width: 100%;
+    width: 100% !important;
   }
   .search-result-main-section {
     position: fixed;
-    top: 6%;
+    top: 8%;
     right: -100%; /* Start hidden off-screen to the right */
     bottom: 0;
-    width: 80% !important;
+    width: 100% !important;
     z-index: 1000;
     background: white;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow on left side */
@@ -6716,8 +6716,8 @@
   .search-result-main-section .mobile-filter-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+    align-items: baseline !important;
+    padding: 6px;
     border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
@@ -6774,17 +6774,6 @@
 @media (max-width: 810px) {
   .mobile-sidebar-overlay.active {
     display: block;
-  }
-}
-
-/* Adjust main content */
-.container-transparent {
-  width: 75%;
-  transition: all 0.3s ease;
-}
-@media (max-width: 810px) {
-  .container-transparent {
-    width: 100%;
   }
 }
 
